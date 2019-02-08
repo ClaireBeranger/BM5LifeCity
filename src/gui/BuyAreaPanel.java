@@ -132,10 +132,10 @@ public class BuyAreaPanel extends JPanel {
         // TODO add your handling code here:
     }                                              
 
+    
     private void PricejComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                               
         // TODO add your handling code here:
     }                                              
-
 
     // Variables declaration - do not modify                     
     private javax.swing.JLabel AreaPricejLabel;

@@ -1,7 +1,5 @@
 package gui;
 
-
-
 /**
  *
  * @author Amira

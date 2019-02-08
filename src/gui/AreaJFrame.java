@@ -3,7 +3,8 @@ package gui;
 import javax.swing.JFrame;
 
 public class AreaJFrame extends javax.swing.JFrame {
-
+	
+	
  /**
 	 * @author Amira
 	 */

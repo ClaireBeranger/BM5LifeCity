@@ -6,13 +6,11 @@ package gui;
  *
  */
 
-
 import javax.swing.JFrame;
 import utils.DialogUtils;
 
 public class CityJFrame extends JFrame {
-       
-        
+             
   
     public CityJFrame() {
         initComponents();
