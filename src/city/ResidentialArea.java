@@ -55,7 +55,7 @@ public class ResidentialArea implements Districts{
 	public String getTypeDistrict() {
 		return typeDistrict;
 	}
-	public void setTypeDistrict(String numbResidentsMax) {
+	public void setTypeDistrict(String typeDistrict) {
 		this.typeDistrict = typeDistrict;
 	}
 	
