@@ -1,6 +1,7 @@
 package city;
 
 import city.Districts;
+import city.Case;
 
 public class ResidentialArea implements Districts{
 //Attributes ---------------------------------------------------------------------------------
