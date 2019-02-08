@@ -25,7 +25,7 @@ public class ResidentialArea implements Districts{
 		for (int i=0; i<dimX;i++) {
 			for(int j=0; j<dimY;j++) {
 				//Districts d = new District(); //attente du constructeur d'un district
-				Districts d = null ;
+				Case d = new Case() ;
 				map[i][j]=d; 					
 			}
 		}	
@@ -55,7 +55,7 @@ public class ResidentialArea implements Districts{
 	public String getTypeDistrict() {
 		return typeDistrict;
 	}
-	public void setTypeDistrict(String numbResidentsMax) {
+	public void setTypeDistrict(String typeDistrict) {
 		this.typeDistrict = typeDistrict;
 	}
 	
