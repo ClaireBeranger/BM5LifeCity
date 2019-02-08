@@ -2,21 +2,34 @@ package city;
 
 import city.Districts;
 
-public class ResidentialArea extends Districts{
+public class ResidentialArea implements Districts{
 //Attributes ---------------------------------------------------------------------------------
-
+	private String nameDsitrict;
+	private String typeDistrict;
 	private int numbResidents;
 	private int numbResidentsMax;
+	private int dimX= 4, dimY= 4;
+	private Case map[][];
 	
 
 //Constructor of Class -----------------------------------------------------------------------
 	
 	public ResidentialArea(String nameDsitrict, String typeDistrict, int numbResidents, int numbResidentsMax) {
-		super(nameDsitrict, typeDistrict);
+		this.nameDsitrict = nameDsitrict;
+		this.typeDistrict = typeDistrict;
 		this.numbResidents = numbResidents;
 		this.numbResidentsMax = numbResidentsMax;
 	}
-	
+//Function of class
+	public void initDistrict() {
+		for (int i=0; i<dimX;i++) {
+			for(int j=0; j<dimY;j++) {
+				//Districts d = new District(); //attente du constructeur d'un district
+				Case d = new Case() ;
+				map[i][j]=d; 					
+			}
+		}	
+	}
 //Constructors of attributes -----------------------------------------------------------------
 	
 	public int getNumbResidents() {
@@ -32,6 +45,19 @@ public class ResidentialArea extends Districts{
 		this.numbResidentsMax = numbResidentsMax;
 	}
 	
+	public String getNameDsitrict() {
+		return nameDsitrict;
+	}
+	public void setNameDsitrict(String nameDsitrict) {
+		this.nameDsitrict = nameDsitrict;
+	}
+	
+	public String getTypeDistrict() {
+		return typeDistrict;
+	}
+	public void setTypeDistrict(String typeDistrict) {
+		this.typeDistrict = typeDistrict;
+	}
 	
 }
 

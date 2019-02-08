@@ -1,10 +1,10 @@
 package city;
 
+
 import java.awt.Graphics;
 
 
 public class Case {
-	
 	private int noCase;
 	private int x;
 	private int y;
@@ -47,6 +47,5 @@ public class Case {
 	
 
 	
-
 
 }

@@ -5,6 +5,7 @@ import clock.Clock;
 
 public class City {
 
+
 	private String name;
 	private int prosperity;
 	private int argent;
@@ -14,7 +15,8 @@ public class City {
 	private Clock clock;
 	private int nbMaxQuartier;
 	
-	
+//Constructor of Class -----------------------------------------------------------------------
+
 	public City(String name, int prosperity, int argent, Districts[][] map, Clock clock, int nbMaxQuartier) {
 		super();
 		this.name = name;
@@ -24,7 +26,8 @@ public class City {
 		this.clock = clock;
 		this.nbMaxQuartier = nbMaxQuartier;
 	}
-
+//Functions of class--------------------------------------------------------------------------
+	
 	public void initMap() {
 		//initialisation de la map en une matrice de 9 districts
 		for (int i=0; i<dimX;i++) {
@@ -40,6 +43,9 @@ public class City {
 		this.argent = this.argent + x;
 		
 	}
+	
+	
+//Constructors of attributes -----------------------------------------------------------------
 
 	public String getName() {
 		return name;
