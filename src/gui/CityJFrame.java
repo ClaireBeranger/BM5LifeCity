@@ -10,10 +10,6 @@ package gui;
 import javax.swing.JFrame;
 import utils.DialogUtils;
 
-/**
- *
- * @author Amira
- */
 public class CityJFrame extends JFrame {
        
         
@@ -26,25 +22,36 @@ public class CityJFrame extends JFrame {
                             
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        ControlCityjPanel = new javax.swing.JPanel();
         ControlMyCityjLabel = new javax.swing.JLabel();
         BuyAreajButton = new javax.swing.JButton();
         AddStationjButton = new javax.swing.JButton();
         AddLineButton = new javax.swing.JButton();
         DevelopmentjButton = new javax.swing.JButton();
         EvolutionjLabel = new javax.swing.JLabel();
+        EvolutionjPanel = new javax.swing.JPanel();
+        Evolutioncanvas = new java.awt.Canvas();
         CityJPanel = new javax.swing.JPanel();
+        Q1Panel = new javax.swing.JPanel();
+        Q3Panel = new javax.swing.JPanel();
+        Q2Panel = new javax.swing.JPanel();
+        Q4Panel = new javax.swing.JPanel();
+        Q6Panel = new javax.swing.JPanel();
+        Q7Panel = new javax.swing.JPanel();
+        Q8Panel = new javax.swing.JPanel();
+        Q9Panel = new javax.swing.JPanel();
+        Q5Panel = new javax.swing.JPanel();
         UserJPanel = new javax.swing.JPanel();
         UserNamejLabel = new javax.swing.JLabel();
         BM5LifeCityjLabel = new javax.swing.JLabel();
         LogOutjButton = new javax.swing.JButton();
-        CityInformationJPanel1 = new javax.swing.JPanel();
+        CityInformationJPanel = new javax.swing.JPanel();
         CityInformationsjLabel = new javax.swing.JLabel();
         BudgetjButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102))));
+        ControlCityjPanel.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102))));
 
         ControlMyCityjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         ControlMyCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -82,28 +89,52 @@ public class CityJFrame extends JFrame {
         EvolutionjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         EvolutionjLabel.setText("Evolution");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(ControlMyCityjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(EvolutionjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(BuyAreajButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(AddStationjButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(AddLineButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
-                            .addComponent(DevelopmentjButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        EvolutionjPanel.setBackground(new java.awt.Color(204, 204, 204));
+        EvolutionjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102)));
+
+        javax.swing.GroupLayout EvolutionjPanelLayout = new javax.swing.GroupLayout(EvolutionjPanel);
+        EvolutionjPanel.setLayout(EvolutionjPanelLayout);
+        EvolutionjPanelLayout.setHorizontalGroup(
+            EvolutionjPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EvolutionjPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Evolutioncanvas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        EvolutionjPanelLayout.setVerticalGroup(
+            EvolutionjPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EvolutionjPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Evolutioncanvas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout ControlCityjPanelLayout = new javax.swing.GroupLayout(ControlCityjPanel);
+        ControlCityjPanel.setLayout(ControlCityjPanelLayout);
+        ControlCityjPanelLayout.setHorizontalGroup(
+            ControlCityjPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ControlCityjPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(ControlCityjPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(EvolutionjPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(ControlCityjPanelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(ControlCityjPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(ControlCityjPanelLayout.createSequentialGroup()
+                                .addComponent(ControlMyCityjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(16, 16, 16))
+                            .addGroup(ControlCityjPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(EvolutionjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(ControlCityjPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(BuyAreajButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(AddStationjButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(AddLineButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
+                                    .addComponent(DevelopmentjButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                 .addGap(30, 30, 30))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        ControlCityjPanelLayout.setVerticalGroup(
+            ControlCityjPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ControlCityjPanelLayout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(ControlMyCityjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -116,20 +147,197 @@ public class CityJFrame extends JFrame {
                 .addComponent(DevelopmentjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
                 .addComponent(EvolutionjLabel)
-                .addContainerGap(138, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(EvolutionjPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         CityJPanel.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102))));
+        CityJPanel.setPreferredSize(new java.awt.Dimension(520, 520));
+
+        Q1Panel.setBackground(new java.awt.Color(0, 130, 0));
+        Q1Panel.setSize(new java.awt.Dimension(18, 18));
+        Q1Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Q1PanelMousePressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Q1PanelLayout = new javax.swing.GroupLayout(Q1Panel);
+        Q1Panel.setLayout(Q1PanelLayout);
+        Q1PanelLayout.setHorizontalGroup(
+            Q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 169, Short.MAX_VALUE)
+        );
+        Q1PanelLayout.setVerticalGroup(
+            Q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 166, Short.MAX_VALUE)
+        );
+
+        Q3Panel.setBackground(new java.awt.Color(0, 130, 0));
+        Q3Panel.setSize(new java.awt.Dimension(18, 18));
+
+        javax.swing.GroupLayout Q3PanelLayout = new javax.swing.GroupLayout(Q3Panel);
+        Q3Panel.setLayout(Q3PanelLayout);
+        Q3PanelLayout.setHorizontalGroup(
+            Q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 169, Short.MAX_VALUE)
+        );
+        Q3PanelLayout.setVerticalGroup(
+            Q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 166, Short.MAX_VALUE)
+        );
+
+        Q2Panel.setBackground(new java.awt.Color(0, 102, 51));
+        Q2Panel.setSize(new java.awt.Dimension(18, 18));
+
+        javax.swing.GroupLayout Q2PanelLayout = new javax.swing.GroupLayout(Q2Panel);
+        Q2Panel.setLayout(Q2PanelLayout);
+        Q2PanelLayout.setHorizontalGroup(
+            Q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 169, Short.MAX_VALUE)
+        );
+        Q2PanelLayout.setVerticalGroup(
+            Q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 166, Short.MAX_VALUE)
+        );
+
+        Q4Panel.setBackground(new java.awt.Color(0, 102, 51));
+        Q4Panel.setSize(new java.awt.Dimension(18, 18));
+
+        javax.swing.GroupLayout Q4PanelLayout = new javax.swing.GroupLayout(Q4Panel);
+        Q4Panel.setLayout(Q4PanelLayout);
+        Q4PanelLayout.setHorizontalGroup(
+            Q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 169, Short.MAX_VALUE)
+        );
+        Q4PanelLayout.setVerticalGroup(
+            Q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 166, Short.MAX_VALUE)
+        );
+
+        Q6Panel.setBackground(new java.awt.Color(0, 102, 51));
+        Q6Panel.setSize(new java.awt.Dimension(18, 18));
+
+        javax.swing.GroupLayout Q6PanelLayout = new javax.swing.GroupLayout(Q6Panel);
+        Q6Panel.setLayout(Q6PanelLayout);
+        Q6PanelLayout.setHorizontalGroup(
+            Q6PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 169, Short.MAX_VALUE)
+        );
+        Q6PanelLayout.setVerticalGroup(
+            Q6PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 166, Short.MAX_VALUE)
+        );
+
+        Q7Panel.setBackground(new java.awt.Color(0, 130, 0));
+        Q7Panel.setSize(new java.awt.Dimension(18, 18));
+
+        javax.swing.GroupLayout Q7PanelLayout = new javax.swing.GroupLayout(Q7Panel);
+        Q7Panel.setLayout(Q7PanelLayout);
+        Q7PanelLayout.setHorizontalGroup(
+            Q7PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 169, Short.MAX_VALUE)
+        );
+        Q7PanelLayout.setVerticalGroup(
+            Q7PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 166, Short.MAX_VALUE)
+        );
+
+        Q8Panel.setBackground(new java.awt.Color(0, 102, 51));
+        Q8Panel.setSize(new java.awt.Dimension(18, 18));
+
+        javax.swing.GroupLayout Q8PanelLayout = new javax.swing.GroupLayout(Q8Panel);
+        Q8Panel.setLayout(Q8PanelLayout);
+        Q8PanelLayout.setHorizontalGroup(
+            Q8PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 169, Short.MAX_VALUE)
+        );
+        Q8PanelLayout.setVerticalGroup(
+            Q8PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 166, Short.MAX_VALUE)
+        );
+
+        Q9Panel.setBackground(new java.awt.Color(0, 130, 0));
+        Q9Panel.setSize(new java.awt.Dimension(18, 18));
+
+        javax.swing.GroupLayout Q9PanelLayout = new javax.swing.GroupLayout(Q9Panel);
+        Q9Panel.setLayout(Q9PanelLayout);
+        Q9PanelLayout.setHorizontalGroup(
+            Q9PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 169, Short.MAX_VALUE)
+        );
+        Q9PanelLayout.setVerticalGroup(
+            Q9PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 166, Short.MAX_VALUE)
+        );
+
+        Q5Panel.setBackground(new java.awt.Color(0, 130, 0));
+        Q5Panel.setSize(new java.awt.Dimension(18, 18));
+
+        javax.swing.GroupLayout Q5PanelLayout = new javax.swing.GroupLayout(Q5Panel);
+        Q5Panel.setLayout(Q5PanelLayout);
+        Q5PanelLayout.setHorizontalGroup(
+            Q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 169, Short.MAX_VALUE)
+        );
+        Q5PanelLayout.setVerticalGroup(
+            Q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 166, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout CityJPanelLayout = new javax.swing.GroupLayout(CityJPanel);
         CityJPanel.setLayout(CityJPanelLayout);
         CityJPanelLayout.setHorizontalGroup(
             CityJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 391, Short.MAX_VALUE)
+            .addGroup(CityJPanelLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(CityJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CityJPanelLayout.createSequentialGroup()
+                        .addGroup(CityJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(CityJPanelLayout.createSequentialGroup()
+                                .addComponent(Q1Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Q2Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(CityJPanelLayout.createSequentialGroup()
+                                .addComponent(Q4Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Q5Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(CityJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Q6Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Q3Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(CityJPanelLayout.createSequentialGroup()
+                        .addComponent(Q7Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Q8Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Q9Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         CityJPanelLayout.setVerticalGroup(
             CityJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 455, Short.MAX_VALUE)
+            .addGroup(CityJPanelLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(CityJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Q3Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Q1Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Q2Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(CityJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(CityJPanelLayout.createSequentialGroup()
+                        .addGroup(CityJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Q4Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Q6Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(CityJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Q7Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Q9Panel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(CityJPanelLayout.createSequentialGroup()
+                        .addComponent(Q5Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Q8Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         UserJPanel.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102))));
@@ -164,7 +372,7 @@ public class CityJFrame extends JFrame {
                         .addGroup(UserJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(BM5LifeCityjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(LogOutjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 28, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         UserJPanelLayout.setVerticalGroup(
             UserJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,43 +383,40 @@ public class CityJFrame extends JFrame {
                 .addComponent(LogOutjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(BM5LifeCityjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
-        CityInformationJPanel1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102))));
+        CityInformationJPanel.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102))));
 
         CityInformationsjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         CityInformationsjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         CityInformationsjLabel.setText("Informations sur ma ville");
 
-        BudgetjButton.setText("Budget");
+        BudgetjButton.setText("2000$");
         BudgetjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BudgetjButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout CityInformationJPanel1Layout = new javax.swing.GroupLayout(CityInformationJPanel1);
-        CityInformationJPanel1.setLayout(CityInformationJPanel1Layout);
+        javax.swing.GroupLayout CityInformationJPanel1Layout = new javax.swing.GroupLayout(CityInformationJPanel);
+        CityInformationJPanel.setLayout(CityInformationJPanel1Layout);
         CityInformationJPanel1Layout.setHorizontalGroup(
             CityInformationJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CityInformationJPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(CityInformationsjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(BudgetjButton)
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addGap(16, 16, 16))
         );
         CityInformationJPanel1Layout.setVerticalGroup(
             CityInformationJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CityInformationJPanel1Layout.createSequentialGroup()
-                .addGroup(CityInformationJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CityInformationJPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(CityInformationsjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(CityInformationJPanel1Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(BudgetjButton)))
+                .addContainerGap()
+                .addGroup(CityInformationJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CityInformationsjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BudgetjButton))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -221,16 +426,13 @@ public class CityJFrame extends JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(CityInformationJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(UserJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(CityJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(CityJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 583, Short.MAX_VALUE)
+                    .addComponent(CityInformationJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(ControlCityjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(UserJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -238,17 +440,17 @@ public class CityJFrame extends JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(CityJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(1, 1, 1)
+                    .addComponent(ControlCityjPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CityJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 574, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(CityInformationJPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CityInformationJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(UserJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
-    }// </editor-fold>                        
+    }                       
 
     private void BuyAreajButtonActionPerformed(java.awt.event.ActionEvent evt) {                                               
         DialogUtils.showDialog(new BuyAreaPanel());
@@ -271,9 +473,16 @@ public class CityJFrame extends JFrame {
     }                                             
 
     private void BudgetjButtonActionPerformed(java.awt.event.ActionEvent evt) {                                              
-    		DialogUtils.showDialog(new DevelopmentControlPanel());
+    		
     }                                             
-
+    private void Q1PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
+        AreaJFrame areaFrame = new AreaJFrame();
+        areaFrame.setVisible(true);
+        areaFrame.setLocationRelativeTo(null);
+        areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        areaFrame.pack();
+        this.dispose();
+}    
     
     /**
      * @param args the command line arguments
@@ -288,21 +497,32 @@ public class CityJFrame extends JFrame {
         });
     }
 
-    // Variables declaration - do not modify                     
+    // Variables declaration - do not modify 
     private javax.swing.JButton AddLineButton;
     private javax.swing.JButton AddStationjButton;
     private javax.swing.JLabel BM5LifeCityjLabel;
     private javax.swing.JButton BudgetjButton;
     private javax.swing.JButton BuyAreajButton;
-    private javax.swing.JPanel CityInformationJPanel1;
+    private javax.swing.JPanel CityInformationJPanel;
     private javax.swing.JLabel CityInformationsjLabel;
     private javax.swing.JPanel CityJPanel;
+    private javax.swing.JPanel ControlCityjPanel;
     private javax.swing.JLabel ControlMyCityjLabel;
     private javax.swing.JButton DevelopmentjButton;
+    private java.awt.Canvas Evolutioncanvas;
     private javax.swing.JLabel EvolutionjLabel;
+    private javax.swing.JPanel EvolutionjPanel;
     private javax.swing.JButton LogOutjButton;
+    private javax.swing.JPanel Q1Panel;
+    private javax.swing.JPanel Q2Panel;
+    private javax.swing.JPanel Q3Panel;
+    private javax.swing.JPanel Q4Panel;
+    private javax.swing.JPanel Q5Panel;
+    private javax.swing.JPanel Q6Panel;
+    private javax.swing.JPanel Q7Panel;
+    private javax.swing.JPanel Q8Panel;
+    private javax.swing.JPanel Q9Panel;
     private javax.swing.JPanel UserJPanel;
     private javax.swing.JLabel UserNamejLabel;
-    private javax.swing.JPanel jPanel1;
     // End of variables declaration                   
 }
