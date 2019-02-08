@@ -16,7 +16,16 @@ public class AdministrativeArea implements Districts{
 			this.numbWorkers = numbWorkers;
 			this.numbWorkersMax = numbWorkersMax;
 		}
-		
+		//Function of class
+		public void initDistrict() {
+			for (int i=0; i<dimX;i++) {
+				for(int j=0; j<dimY;j++) {
+					//Districts d = new District(); //attente du constructeur d'un district
+					Case d = new Case() ;
+					map[i][j]=d; 					
+				}
+			}	
+		}	
 //Constructors of attributes -----------------------------------------------------------------
 	
 		public int getNumbWorkers() {
