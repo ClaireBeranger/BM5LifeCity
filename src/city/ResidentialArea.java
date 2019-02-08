@@ -10,6 +10,7 @@ public class ResidentialArea implements Districts{
 	private int numbResidentsMax;
 	private int dimX= 4, dimY= 4;
 	private Case map[][];
+	private int price = 500;
 	
 
 //Constructor of Class -----------------------------------------------------------------------

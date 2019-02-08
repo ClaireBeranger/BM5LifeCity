@@ -8,6 +8,8 @@ public class AdministrativeArea implements Districts{
 		private int numbWorkersMax;
 		private int dimX= 4, dimY= 4;
 		private Case map[][];
+		private int price = 600;
+		
 //Constructor of Class -----------------------------------------------------------------------
 
 		public AdministrativeArea(String nameDsitrict, String typeDistrict, int numbWorkers, int numbWorkersMax) {

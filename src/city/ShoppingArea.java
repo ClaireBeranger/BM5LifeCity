@@ -11,6 +11,8 @@ public class ShoppingArea implements Districts {
 	private int numbTradersMax;
 	private int dimX= 4, dimY= 4;
 	private Case map[][];
+	private int price = 700;
+	
 //Constructor of Class -----------------------------------------------------------------------
 	
 public ShoppingArea(String nameDsitrict, String typeDistrict, int numbTraders, int numbTradersMax) {
@@ -18,6 +20,7 @@ public ShoppingArea(String nameDsitrict, String typeDistrict, int numbTraders, i
 		this.typeDistrict = typeDistrict;
 		this.numbTraders = numbTraders;
 		this.numbTradersMax = numbTradersMax;
+		
 	}
 //Function of class
 	public void initDistrict() {
