@@ -1,4 +1,4 @@
-package src.city;
+package city;
 
 public class Districts {
 //Attributes ---------------------------------------------------------------------------------
