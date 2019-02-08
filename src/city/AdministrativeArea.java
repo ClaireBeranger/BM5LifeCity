@@ -26,7 +26,7 @@ public class AdministrativeArea implements Districts{
 					}
 					else { //Les autres cases avec null
 						Case c = new Case(Case.Type.NOTHING) ;
-						map[i][j]=c; 	//----
+						map[i][j]=c; 	//-----
 					}
 				}	
 			}
