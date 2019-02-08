@@ -23,7 +23,7 @@ public ShoppingArea(String nameDsitrict, String typeDistrict, int numbTraders, i
 	public void initDistrict() {
 		for (int i=0; i<dimX;i++) {
 			for(int j=0; j<dimY;j++) {
-				if(i==0 && j<=3) { //Trois premières cases avec une maison
+				if(i==0 && j<3) { //Trois premières cases avec une maison
 					Case c = new Case(Case.Type.STORE) ;
 					map[i][j]=c;
 				}
