@@ -12,7 +12,7 @@ public class Case {
 	public enum type {HOME, STATION, RES_BUILDING, ADMIN_BUILDING, COM_BUILDING} ;  
 	
 	public Case() {
-		//hello
+		//hello faress
 	}
 		
 
