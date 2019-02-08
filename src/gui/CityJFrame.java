@@ -48,9 +48,9 @@ public class CityJFrame extends JFrame {
 
         ControlMyCityjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         ControlMyCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ControlMyCityjLabel.setText("ContrÃ´ler ma ville");
+        ControlMyCityjLabel.setText("Contrôler ma ville");
 
-        BuyAreajButton.setText("Acheter un  quartier");
+        BuyAreajButton.setText("Acheter un quartier");
         BuyAreajButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BuyAreajButtonActionPerformed(evt);
@@ -64,14 +64,14 @@ public class CityJFrame extends JFrame {
             }
         });
 
-        AddLineButton.setText("Ajouter une ligne de mÃ©tro");
+        AddLineButton.setText("Ajouter une ligne de métro");
         AddLineButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddLineButtonActionPerformed(evt);
             }
         });
 
-        DevelopmentjButton.setText("DÃ©velopper un quartier");
+        DevelopmentjButton.setText("Développer un quartier");
         DevelopmentjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DevelopmentjButtonActionPerformed(evt);
@@ -143,7 +143,7 @@ public class CityJFrame extends JFrame {
         BM5LifeCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BM5LifeCityjLabel.setText("BM5lifeCity");
 
-        LogOutjButton.setText("DÃ©connexion");
+        LogOutjButton.setText("Déconnexion");
         LogOutjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogOutjButtonActionPerformed(evt);
@@ -271,7 +271,7 @@ public class CityJFrame extends JFrame {
     }                                             
 
     private void BudgetjButtonActionPerformed(java.awt.event.ActionEvent evt) {                                              
-    		DialogUtils.showDialog(new DevelopmentControlPanel());
+    		DialogUtils.showDialog(new AreaDetailsPanel());
     }                                             
 
     
