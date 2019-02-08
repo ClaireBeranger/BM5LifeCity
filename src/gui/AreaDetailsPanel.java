@@ -2,7 +2,7 @@ package gui;
 
 import javax.swing.JPanel;
 /**
- * 
+ * affichage des informations sur un quartier
  * @author Chri-
  *
  */
