@@ -3,7 +3,7 @@ package gui;
 import javax.swing.JPanel;
 /**
  * affichage des informations sur un quartier
- * ...
+ * ......
  * @author Chri-
  *
  */
@@ -30,6 +30,19 @@ public class AreaDetailsPanel extends JPanel {
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
+        
+        layout.setHorizontalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(18, 18, 18)
+                            .addComponent(titlejlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    		).addGap(30, 30, 30)
+                    .addContainerGap(16, Short.MAX_VALUE))
+
+            );
+        
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -40,15 +53,7 @@ public class AreaDetailsPanel extends JPanel {
         );
     }
     
-   /* public static void main(String args[]) {
-    	 
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new AreaDetailsPanel().setVisible(true);
-            }
-        });
-    }*/
+
     
     private javax.swing.JLabel titlejlabel;
 

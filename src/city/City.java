@@ -106,13 +106,18 @@ public class City {
 		this.nbMaxQuartier = nbMaxQuartier;
 	}
 	
-	
-	
 	@Override
 	public String toString() {
-		return "City [name=" + name + ", prosperity=" + prosperity + ", argent=" + argent + ", map="
-				+ Arrays.toString(map) + ", clock=" + clock + ", nbMaxQuartier=" + nbMaxQuartier + "]";
+		return "City [name=" + name + ", prosperity=" + prosperity + ", argent=" + argent + ", dimX=" + dimX + ", dimY="
+				+ dimY + ", map=" + Arrays.toString(map) + ", clock=" + clock + ", nbMaxQuartier=" + nbMaxQuartier
+				+ ", getName()=" + getName() + ", getProsperity()=" + getProsperity() + ", getArgent()=" + getArgent()
+				+ ", getMap()=" + Arrays.toString(getMap()) + ", getClock()=" + getClock() + ", getNbMaxQuartier()="
+				+ getNbMaxQuartier() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
 	}
+
+	
+	
 
 
 	
