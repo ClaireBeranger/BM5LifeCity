@@ -1,20 +1,20 @@
 package city;
 
-
-import java.awt.Graphics;
-
-
 public class Case {
 
 
 	private int noCase;
 	private int x;
 	private int y;
-
-	public enum type {HOME, STATION, RES_BUILDING, ADMIN_BUILDING, COM_BUILDING} ;  
+	private Type type;
 	
-	public Case() {
-		//hello faress oumsss
+	public enum Type {NOTHING ,HOME, STATION, RES_BUILDING, ADMIN_BUILDING, COM_BUILDING, STORE } ;  
+	
+	public Case(int noCase, int x, int y , Type type) {
+		this.noCase = noCase;
+		this.x = x ;
+		this.y = y ;
+		this.type= type;
 	}
 		
 
