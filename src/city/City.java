@@ -4,7 +4,8 @@ import java.util.Arrays;
 import clock.Clock;
 
 public class City {
-	
+
+
 	private String name;
 	private int prosperity;
 	private int argent;
