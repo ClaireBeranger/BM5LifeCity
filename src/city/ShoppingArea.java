@@ -1,5 +1,7 @@
 package city;
 
+import city.Case;
+
 
 public class ShoppingArea implements Districts {
 //Attributes ---------------------------------------------------------------------------------
@@ -21,11 +23,16 @@ public ShoppingArea(String nameDsitrict, String typeDistrict, int numbTraders, i
 	public void initDistrict() {
 		for (int i=0; i<dimX;i++) {
 			for(int j=0; j<dimY;j++) {
-				//Districts d = new District(); //attente du constructeur d'un district
-				Case d = new Case() ;
-				map[i][j]=d; 					
-			}
-		}	
+				if(i==0 && j<=3) { //Trois premières cases avec une maison
+					Case c = new Case(Case.Type.STORE) ;
+					map[i][j]=c;
+				}
+				else { //Les autres cases avec null
+					Case c = new Case(Case.Type.NOTHING) ;
+					map[i][j]=c; 	//-----
+				}
+			}	
+		}
 	}
 //Constructors of attributes -----------------------------------------------------------------
 
