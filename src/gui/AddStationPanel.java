@@ -2,7 +2,7 @@ package gui;
 
 import javax.swing.JPanel;
 
-/**
+	/**
 	 *
 	 * @author Amira
 	 */
@@ -18,16 +18,16 @@ import javax.swing.JPanel;
 	  
 	    private void initComponents() {
 
-	        jLabel2 = new javax.swing.JLabel();
+	        AddStationjLabell = new javax.swing.JLabel();
 	        AreaTypejLabel = new javax.swing.JLabel();
 	        AreajComboBox2 = new javax.swing.JComboBox<>();
 	        AreaPricejLabel = new javax.swing.JLabel();
 	        PricejComboBox = new javax.swing.JComboBox<>();
 	        ValidatejButton1 = new javax.swing.JButton();
 
-	        jLabel2.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
-	        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-	        jLabel2.setText("Ajout d'une station");
+	        AddStationjLabell.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
+	        AddStationjLabell.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+	        AddStationjLabell.setText("Ajout d'une station");
 
 	        AreaTypejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
 	        AreaTypejLabel.setText("Nom du quartier");
@@ -59,7 +59,7 @@ import javax.swing.JPanel;
 	                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
 	                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
 	                        .addGap(40, 40, 40)
-	                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE))
+	                        .addComponent(AddStationjLabell, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE))
 	                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
 	                        .addGap(25, 25, 25)
 	                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -81,7 +81,7 @@ import javax.swing.JPanel;
 	            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 	            .addGroup(layout.createSequentialGroup()
 	                .addGap(20, 20, 20)
-	                .addComponent(jLabel2)
+	                .addComponent(AddStationjLabell)
 	                .addGap(26, 26, 26)
 	                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
 	                    .addComponent(AreajComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -111,7 +111,7 @@ import javax.swing.JPanel;
 	    private javax.swing.JComboBox<String> AreajComboBox2;
 	    private javax.swing.JComboBox<String> PricejComboBox;
 	    private javax.swing.JButton ValidatejButton1;
-	    private javax.swing.JLabel jLabel2;
+	    private javax.swing.JLabel AddStationjLabell;
 	    // End of variables declaration                   
 	
 

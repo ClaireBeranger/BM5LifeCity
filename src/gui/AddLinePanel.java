@@ -1,7 +1,5 @@
 package gui;
-
-
-
+ 
 /**
  *
  * @author Amira
@@ -19,7 +17,7 @@ public class AddLinePanel extends javax.swing.JPanel {
                               
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
+        AddLinejLabel = new javax.swing.JLabel();
         AreaTypejLabel = new javax.swing.JLabel();
         AreajComboBox2 = new javax.swing.JComboBox<>();
         AreaTypejLabel1 = new javax.swing.JLabel();
@@ -28,9 +26,9 @@ public class AddLinePanel extends javax.swing.JPanel {
         PricejComboBox = new javax.swing.JComboBox<>();
         ValidatejButton1 = new javax.swing.JButton();
 
-        jLabel2.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Ajout d'une ligne");
+        AddLinejLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
+        AddLinejLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AddLinejLabel.setText("Ajout d'une ligne");
 
         AreaTypejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         AreaTypejLabel.setText("Station du départ");
@@ -75,7 +73,7 @@ public class AddLinePanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AddLinejLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(AreaPricejLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -95,7 +93,7 @@ public class AddLinePanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jLabel2)
+                .addComponent(AddLinejLabel)
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(AreaTypejLabel)
@@ -135,7 +133,7 @@ public class AddLinePanel extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> AreajComboBox3;
     private javax.swing.JComboBox<String> PricejComboBox;
     private javax.swing.JButton ValidatejButton1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel AddLinejLabel;
     // End of variables declaration                   
 }
 

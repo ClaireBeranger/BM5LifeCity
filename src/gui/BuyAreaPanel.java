@@ -31,7 +31,7 @@ public class BuyAreaPanel extends JPanel {
                               
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
+        BuyAreajLabel = new javax.swing.JLabel();
         AreaPricejLabel = new javax.swing.JLabel();
         AreaTypejLabel = new javax.swing.JLabel();
         AreajComboBox1 = new javax.swing.JComboBox<>();
@@ -40,9 +40,9 @@ public class BuyAreaPanel extends JPanel {
         PricejComboBox = new javax.swing.JComboBox<>();
         ValidatejButton1 = new javax.swing.JButton();
 
-        jLabel2.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Achat d'un quartier");
+        BuyAreajLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
+        BuyAreajLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BuyAreajLabel.setText("Achat d'un quartier");
 
         AreaPricejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         AreaPricejLabel.setText("Prix");
@@ -83,7 +83,7 @@ public class BuyAreaPanel extends JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BuyAreajLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -105,7 +105,7 @@ public class BuyAreaPanel extends JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(45, 45, 45)
-                .addComponent(jLabel2)
+                .addComponent(BuyAreajLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AreaTypejLabel)
@@ -122,7 +122,7 @@ public class BuyAreaPanel extends JPanel {
                 .addComponent(ValidatejButton1)
                 .addGap(20, 20, 20))
         );
-    }// </editor-fold>                        
+    }                  
 
     private void AreajComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {                                               
         // TODO add your handling code here:
@@ -132,10 +132,10 @@ public class BuyAreaPanel extends JPanel {
         // TODO add your handling code here:
     }                                              
 
+   
     private void PricejComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                               
         // TODO add your handling code here:
     }                                              
-
 
     // Variables declaration - do not modify                     
     private javax.swing.JLabel AreaPricejLabel;
@@ -145,6 +145,6 @@ public class BuyAreaPanel extends JPanel {
     private javax.swing.JComboBox<String> AreajComboBox2;
     private javax.swing.JComboBox<String> PricejComboBox;
     private javax.swing.JButton ValidatejButton1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel BuyAreajLabel;
     // End of variables declaration                   
 }

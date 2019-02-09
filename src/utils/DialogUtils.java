@@ -5,7 +5,6 @@ package utils;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 
-
 /**
  *
  * @author Amira

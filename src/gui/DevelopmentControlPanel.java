@@ -5,16 +5,12 @@ package gui;
 
 import javax.swing.JPanel;
 
-/**
+/** 
  * @author Amira
  *
  */
 public class DevelopmentControlPanel extends JPanel {
 
-
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 4113043323408879319L;
 	/**
      * Creates new form DevelopmentControlPanel
