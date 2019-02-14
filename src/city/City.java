@@ -24,7 +24,6 @@ public class City {
 		initMap();
 		this.clock = new Clock();
 		this.nbMaxQuartier = dimX*dimY;
-		System.out.println(toString());
 	}
 //Functions of class--------------------------------------------------------------------------
 	
