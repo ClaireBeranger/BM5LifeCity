@@ -1,7 +1,5 @@
 package city;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import clock.Clock;
 
 public class City {
@@ -26,29 +24,28 @@ public class City {
 		initMap();
 		this.clock = new Clock();
 		this.nbMaxQuartier = dimX*dimY;
+		System.out.println(toString());
 	}
 //Functions of class--------------------------------------------------------------------------
 	
-	public void initMap() {
-		//initialisation de la map en une matrice de 9 districts
+	public void initMap() { //initialisation de la map en une matrice de 9 districts
+		
 		for (int i=0; i<dimX;i++) {
 			for(int j=0; j<dimY;j++) {
 				if(i==0 && j==0) {
-					Districts d = new ResidentialArea("res"+i+j);
-					map[i][j]=d; 
+					this.map[i][j] = new ResidentialArea("res"+i+j); 
 				}
-				if(i==0 && j==1) {
-					Districts d = new ShoppingArea("shop"+i+j);
-					map[i][j]=d; 
+				else if(i==0 && j==1) {
+					this.map[i][j] = new ShoppingArea("shop"+i+j);
 				}
-				if(i==0 && j==2) {
-					Districts d = new AdministrativeArea("admin"+i+j);
-					map[i][j]=d; 
+				else if(i==0 && j==2) {
+					this.map[i][j] = new AdministrativeArea("admin"+i+j);
 				}
-				Districts d = null;
-				map[i][j]=d; 					
+				else {
+					this.map[i][j] = null;
+				} 					
 			}
-		}	
+		}		
 	}
 	
 	public void variationArgent(int x) {
@@ -96,11 +93,22 @@ public class City {
 	}
 
 	
+	public String toStringDistricts(Districts[][] map) {
+		String str= "";
+		for(int i=0; i<dimX;i++) {
+			for(int j=0; j<dimY;j++) {
+				if(map[i][j] != null)
+					str=str+"\n"+map[i][j].toString()+"\n";			
+			}
+		}
+		return str;	
+	}
+	
 	@Override
 	public String toString() {
 		return "BEGIN City [\n City_name = " + name + ",\n City_prosperity=" + prosperity + ", City_money=" + money +", dimX=" + dimX + ", dimY=" + dimY 
 				+ ",\n nbMaxQuartier=" + nbMaxQuartier + ", clock=" + clock +
-				",\n CityDistricts=\n \t" + Arrays.toString(map) +"\nEND City]";
+				",\n CityDistricts=\n \t" + toStringDistricts(getMap()) +"\nEND City]";
 	}
 
 }

@@ -8,12 +8,13 @@ import city.Case;
 public class ShoppingArea implements Districts {
 //Attributes ---------------------------------------------------------------------------------
 	private String nameDsitrict;
-	private String typeDistrict;
-	private int numbTraders;
-	private int numbTradersMax;
+	private String typeDistrict = "SHOPPING";
+	private int numbTraders=0;
+	private int numbTradersMax=50;
 	private int dimX= 4, dimY= 4;
 	private Case[][] map = new Case [dimX][dimY];
 	private int price = 40;
+	private int level = 1;
 	
 //Constructor of Class -----------------------------------------------------------------------
 	
@@ -80,12 +81,30 @@ public ShoppingArea(String nameDsitrict) {
 	public void setPrice(int price) {
 		this.price = price;
 	}
+	public int getLevel() {
+		return level;
+	}
 
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
+	public String toStringCases(Case[][] map) {
+		String str = "";
+		for(int i=0; i<dimX;i++) {
+			for(int j=0; j<dimY;j++) {
+				if(map[i][j] != null)
+					str=str+map[i][j].toString();			
+			}
+		}
+		return str;
+	}
+	
 	@Override
 	public String toString() {
-		return "BEGIN ShoppingArea [\n nameDsitrict=" + nameDsitrict + "\n, typeDistrict=" + typeDistrict + ",\n numbTraders="
-				+ numbTraders + ",\n numbTradersMax=" + numbTradersMax + ",\n dimX=" + dimX + ",\n dimY=" + dimY + ", map="
-				+ Arrays.toString(map) + ",\n price=" + price + "\nEND ShoppingArea]";
+		return "BEGIN ShoppingArea [\n nameDsitrict=" + nameDsitrict + ", typeDistrict=" + typeDistrict + ", numbTraders="
+				+ numbTraders + ", numbTradersMax=" + numbTradersMax + ", dimX=" + dimX + ", dimY=" + dimY + ",\n price=" + price 
+				+ ", map=" + toStringCases(map)+ "\nEND ShoppingArea]";
 	}
 	
 	

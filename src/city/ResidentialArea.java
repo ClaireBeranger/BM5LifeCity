@@ -10,11 +10,12 @@ public class ResidentialArea implements Districts{
 //Attributes ---------------------------------------------------------------------------------
 	private String nameDsitrict;
 	private String typeDistrict = "RESIDENTIAL";
-	private int numbResidentsCurrent;
-	private int numbResidentsMax;
+	private int numbResidentsCurrent=0;
+	private int numbResidentsMax=50;
 	private int dimX= 4, dimY= 4;
 	private Case[][] map = new Case [dimX][dimY];
 	private int price = 500;
+	private int level = 1;
 	
 
 //Constructor of Class -----------------------------------------------------------------------
@@ -85,14 +86,34 @@ public class ResidentialArea implements Districts{
 	public void setPrice(int price) {
 		this.price = price;
 	}
-
+	
+	public int getLevel() {
+		return level;
+	}
+	public void setLevel(int level) {
+		this.level = level;
+	}
+	
+//---------------------------------------------------------------
+	
+	public String toStringCases(Case[][] map) {
+		String str = "";
+		for(int i=0; i<dimX;i++) {
+			for(int j=0; j<dimY;j++) {
+				if(map[i][j] != null)
+					str=str+map[i][j].toString();			
+			}
+		}
+		return str;
+	}
+	
 
 	@Override
 	public String toString() {
 		String tmp = "BEGIN ResidentialArea [\n nameDsitrict=" + nameDsitrict + ", typeDistrict=" + typeDistrict
-					+ ",\n numbResidentsCurrent=" + numbResidentsCurrent + ", numbResidentsMax=" + numbResidentsMax
+					+ ", numbResidentsCurrent=" + numbResidentsCurrent + ", numbResidentsMax=" + numbResidentsMax
 					+ ", dimX=" + dimX + ", dimY=" + dimY + ", price=" + price 
-					+ ",\n map=" + Arrays.toString(map) + "\nEND ResidentialArea ]";
+					+ ",\n map=" + toStringCases(map) + "\nEND ResidentialArea ]";
 	
 	return tmp;
 	}

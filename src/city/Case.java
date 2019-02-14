@@ -21,6 +21,10 @@ public class Case {
 	public Type getType() {
 		return type;
 	}
+	
+	public String toStringtype() {
+		return type.toString();
+	}
 
 	public void setType(Type type) {
 		this.type = type;
@@ -28,7 +32,7 @@ public class Case {
 	
 	@Override
 	public String toString() {
-		return "Case [typeCase=" + type + ", xCase=" + x + ", yCase=" + y + "]\n";
+		return "--[xCase=" + x + ", yCase=" + y + ", typeCase=" + type +"]";
 	}
 	
 	

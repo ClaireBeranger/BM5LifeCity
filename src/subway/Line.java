@@ -1,9 +1,7 @@
 package subway;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-
-import city.Case;
+import city.*;
 
 public class Line {
 	
