@@ -49,7 +49,7 @@ public class CityControlPanel extends javax.swing.JPanel {
 
         ControlMyCityjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         ControlMyCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ControlMyCityjLabel.setText("ContrÃ´ler ma ville");
+        ControlMyCityjLabel.setText("Contrôler ma ville");
 
         BuyAreajButton.setText("Acheter un  quartier");
         BuyAreajButton.addActionListener(new java.awt.event.ActionListener() {

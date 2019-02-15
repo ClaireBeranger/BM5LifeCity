@@ -5,9 +5,11 @@ import javax.swing.JFrame;
 public class AreaJFrame extends javax.swing.JFrame {
 	
 
- /**
-	 * @author Amira
-	 */
+/**
+ * 
+ * @author Amira - Claire
+ * 
+ */
 	private static final long serialVersionUID = -6258284235223024914L;
 			/**
 		     * Creates new form AreaJFrame
