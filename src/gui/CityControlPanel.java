@@ -65,14 +65,14 @@ public class CityControlPanel extends javax.swing.JPanel {
             }
         });
 
-        AddLineButton.setText("Ajouter une ligne de mÃ©tro");
+        AddLineButton.setText("Ajouter une ligne de métro");
         AddLineButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddLineButtonActionPerformed(evt);
             }
         });
 
-        DevelopmentjButton.setText("DÃ©velopper un quartier");
+        DevelopmentjButton.setText("Développer un quartier");
         DevelopmentjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DevelopmentjButtonActionPerformed(evt);

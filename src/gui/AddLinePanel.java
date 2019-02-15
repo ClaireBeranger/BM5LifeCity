@@ -31,7 +31,7 @@ public class AddLinePanel extends javax.swing.JPanel {
         AddLinejLabel.setText("Ajout d'une ligne");
 
         AreaTypejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        AreaTypejLabel.setText("Station du dÃ©part");
+        AreaTypejLabel.setText("Station du départ");
 
         AreajComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quartier Q1", "Quartier Q2", "Quartier Q3", "Quartier Q4", "Quartier Q5", "Quartier Q6", "Quartier Q7", "Quartier Q8", "Quartier Q9" }));
         AreajComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -41,7 +41,7 @@ public class AddLinePanel extends javax.swing.JPanel {
         });
 
         AreaTypejLabel1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        AreaTypejLabel1.setText("Station d'arrivÃ©e");
+        AreaTypejLabel1.setText("Station d'arrivée");
 
         AreajComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quartier Q1", "Quartier Q2", "Quartier Q3", "Quartier Q4", "Quartier Q5", "Quartier Q6", "Quartier Q7", "Quartier Q8", "Quartier Q9" }));
         AreajComboBox3.addActionListener(new java.awt.event.ActionListener() {
