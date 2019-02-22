@@ -79,7 +79,7 @@ public class FirstPage {
 		frame.getContentPane().add(lblEntrezLeNom);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Admin\\Desktop\\logo_BM5_Life_City2.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("src/picture/logo_BM5_Life_City2.jpg"));
 		lblNewLabel.setBounds(109, 21, 230, 222);
 		frame.getContentPane().add(lblNewLabel);
 	}
