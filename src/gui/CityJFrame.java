@@ -2,7 +2,8 @@
 package gui;
 
 /**
- * @author Amira
+ * 
+ * @author Amira - Claire
  *
  */
 import javax.swing.JFrame;
@@ -52,7 +53,7 @@ public class CityJFrame extends JFrame {
 
         ControlMyCityjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         ControlMyCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ControlMyCityjLabel.setText("ContrÃ´ler ma ville");
+        ControlMyCityjLabel.setText("Contrôler ma ville");
 
         BuyAreajButton.setText("Acheter un  quartier");
         BuyAreajButton.addActionListener(new java.awt.event.ActionListener() {
@@ -68,14 +69,14 @@ public class CityJFrame extends JFrame {
             }
         });
 
-        AddLineButton.setText("Ajouter une ligne de mÃ©tro");
+        AddLineButton.setText("Ajouter une ligne de métro");
         AddLineButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddLineButtonActionPerformed(evt);
             }
         });
 
-        DevelopmentjButton.setText("DÃ©velopper un quartier");
+        DevelopmentjButton.setText("Développer un quartier");
         DevelopmentjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DevelopmentjButtonActionPerformed(evt);
@@ -173,6 +174,11 @@ public class CityJFrame extends JFrame {
 
         Q3Panel.setBackground(new java.awt.Color(0, 130, 0));
         Q3Panel.setSize(new java.awt.Dimension(18, 18));
+        Q3Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Q3PanelMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Q3PanelLayout = new javax.swing.GroupLayout(Q3Panel);
         Q3Panel.setLayout(Q3PanelLayout);
@@ -187,6 +193,11 @@ public class CityJFrame extends JFrame {
 
         Q2Panel.setBackground(new java.awt.Color(0, 102, 51));
         Q2Panel.setSize(new java.awt.Dimension(18, 18));
+        Q2Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Q2PanelMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Q2PanelLayout = new javax.swing.GroupLayout(Q2Panel);
         Q2Panel.setLayout(Q2PanelLayout);
@@ -201,6 +212,11 @@ public class CityJFrame extends JFrame {
 
         Q4Panel.setBackground(new java.awt.Color(0, 102, 51));
         Q4Panel.setSize(new java.awt.Dimension(18, 18));
+        Q4Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Q4PanelMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Q4PanelLayout = new javax.swing.GroupLayout(Q4Panel);
         Q4Panel.setLayout(Q4PanelLayout);
@@ -215,6 +231,11 @@ public class CityJFrame extends JFrame {
 
         Q6Panel.setBackground(new java.awt.Color(0, 102, 51));
         Q6Panel.setSize(new java.awt.Dimension(18, 18));
+        Q6Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Q6PanelMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Q6PanelLayout = new javax.swing.GroupLayout(Q6Panel);
         Q6Panel.setLayout(Q6PanelLayout);
@@ -229,6 +250,11 @@ public class CityJFrame extends JFrame {
 
         Q7Panel.setBackground(new java.awt.Color(0, 130, 0));
         Q7Panel.setSize(new java.awt.Dimension(18, 18));
+        Q7Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Q7PanelMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Q7PanelLayout = new javax.swing.GroupLayout(Q7Panel);
         Q7Panel.setLayout(Q7PanelLayout);
@@ -243,6 +269,11 @@ public class CityJFrame extends JFrame {
 
         Q8Panel.setBackground(new java.awt.Color(0, 102, 51));
         Q8Panel.setSize(new java.awt.Dimension(18, 18));
+        Q8Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Q8PanelMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Q8PanelLayout = new javax.swing.GroupLayout(Q8Panel);
         Q8Panel.setLayout(Q8PanelLayout);
@@ -257,6 +288,11 @@ public class CityJFrame extends JFrame {
 
         Q9Panel.setBackground(new java.awt.Color(0, 130, 0));
         Q9Panel.setSize(new java.awt.Dimension(18, 18));
+        Q9Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Q9PanelMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Q9PanelLayout = new javax.swing.GroupLayout(Q9Panel);
         Q9Panel.setLayout(Q9PanelLayout);
@@ -271,6 +307,11 @@ public class CityJFrame extends JFrame {
 
         Q5Panel.setBackground(new java.awt.Color(0, 130, 0));
         Q5Panel.setSize(new java.awt.Dimension(18, 18));
+        Q5Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                Q5PanelMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Q5PanelLayout = new javax.swing.GroupLayout(Q5Panel);
         Q5Panel.setLayout(Q5PanelLayout);
@@ -348,7 +389,7 @@ public class CityJFrame extends JFrame {
         BM5LifeCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BM5LifeCityjLabel.setText("BM5lifeCity");
 
-        LogOutjButton.setText("DÃ©connexion");
+        LogOutjButton.setText("Déconnexion");
         LogOutjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogOutjButtonActionPerformed(evt);
@@ -473,13 +514,83 @@ public class CityJFrame extends JFrame {
     		
     }                                             
     private void Q1PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
-        AreaJFrame areaFrame = new AreaJFrame();
+        AreaJFrame areaFrame = new AreaJFrame("Q1");
         areaFrame.setVisible(true);
         areaFrame.setLocationRelativeTo(null);
         areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         areaFrame.pack();
         this.dispose();
-}    
+    }    
+    
+    private void Q2PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
+        AreaJFrame areaFrame = new AreaJFrame("Q2");
+        areaFrame.setVisible(true);
+        areaFrame.setLocationRelativeTo(null);
+        areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        areaFrame.pack();
+        this.dispose();
+    }  
+    
+    private void Q3PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
+        AreaJFrame areaFrame = new AreaJFrame("Q3");
+        areaFrame.setVisible(true);
+        areaFrame.setLocationRelativeTo(null);
+        areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        areaFrame.pack();
+        this.dispose();
+    } 
+    
+    private void Q4PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
+        AreaJFrame areaFrame = new AreaJFrame("Q4");
+        areaFrame.setVisible(true);
+        areaFrame.setLocationRelativeTo(null);
+        areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        areaFrame.pack();
+        this.dispose();
+    } 
+    
+    private void Q5PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
+        AreaJFrame areaFrame = new AreaJFrame("Q5");
+        areaFrame.setVisible(true);
+        areaFrame.setLocationRelativeTo(null);
+        areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        areaFrame.pack();
+        this.dispose();
+    } 
+    
+    private void Q6PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
+        AreaJFrame areaFrame = new AreaJFrame("Q6");
+        areaFrame.setVisible(true);
+        areaFrame.setLocationRelativeTo(null);
+        areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        areaFrame.pack();
+        this.dispose();
+    } 
+    
+    private void Q7PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
+        AreaJFrame areaFrame = new AreaJFrame("Q7");
+        areaFrame.setVisible(true);
+        areaFrame.setLocationRelativeTo(null);
+        areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        areaFrame.pack();
+        this.dispose();
+    } 
+    private void Q8PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
+        AreaJFrame areaFrame = new AreaJFrame("Q8");
+        areaFrame.setVisible(true);
+        areaFrame.setLocationRelativeTo(null);
+        areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        areaFrame.pack();
+        this.dispose();
+    } 
+    private void Q9PanelMousePressed(java.awt.event.MouseEvent evt) {                                     
+        AreaJFrame areaFrame = new AreaJFrame("Q9");
+        areaFrame.setVisible(true);
+        areaFrame.setLocationRelativeTo(null);
+        areaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        areaFrame.pack();
+        this.dispose();
+    } 
     
     /**
      * @param args the command line arguments

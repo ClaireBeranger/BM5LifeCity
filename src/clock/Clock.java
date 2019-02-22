@@ -54,7 +54,6 @@ public class Clock {	//creation of the clock
 		}
 	}
 
-
 	public String getMonth() {
 		if (month<10)
 			return "" + 0 + month;
@@ -134,26 +133,7 @@ public class Clock {	//creation of the clock
 		return "HOUR : " + getHour() + ":" + getMinute() + " ; DATE : " + getDay() + "/" + getMonth() + "/" + getYear();
 	}
 	
-	
 
-	public static void main(String[] args){ //Test 
-		Clock clock = new Clock();
-		
-		boolean bool = true;
-		while (bool!=false){
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				System.out.println(e.getMessage());
-			}
-			clock.increment();
-			System.out.println(clock.toString());
-		}	
-	}
-	
-	
-	
-	
 	
 	
 }

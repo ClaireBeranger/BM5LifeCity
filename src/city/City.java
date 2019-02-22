@@ -8,9 +8,10 @@ public class City {
 	private String name;
 	private int prosperity;
 	private int money;
-	private int dimX=3;
-	private int dimY=3;
+	private int dimX=5;
+	private int dimY=10;
 	private Districts[][] map = new Districts[dimX][dimY];
+	
 	private Clock clock;
 	private int nbMaxQuartier;
 	
@@ -32,19 +33,19 @@ public class City {
 		for (int i=0; i<dimX;i++) {
 			for(int j=0; j<dimY;j++) {
 				if(i==0 && j==0) {
-					this.map[i][j] = new ResidentialArea("res"+i+j); 
+					this.map[i][j] = new ResidentialArea("res"+i+j, i,j); 
 				}
 				else if(i==0 && j==1) {
-					this.map[i][j] = new ShoppingArea("shop"+i+j);
+					this.map[i][j] = new ShoppingArea("shop"+i+j, i,j);
 				}
 				else if(i==0 && j==2) {
-					this.map[i][j] = new AdministrativeArea("admin"+i+j);
+					this.map[i][j] = new AdministrativeArea("admin"+i+j, i,j);
 				}
 				else {
 					this.map[i][j] = null;
 				} 					
 			}
-		}		
+		}		//wouhouu
 	}
 	
 	public void variationArgent(int x) {
@@ -52,6 +53,7 @@ public class City {
 		
 	}
 	
+
 //Getters and setters of attributes -----------------------------------------------------------------
 
 	public String getName() {

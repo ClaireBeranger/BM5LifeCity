@@ -6,19 +6,23 @@ import city.*;
 public class Line {
 	
 	private String nameLine;
-	private ArrayList stations = new ArrayList<Station>();
+	private Station start ; 
+	
+	private Station arrive ;
 	private int timeTraject;
 	private Case[][] map = new Case [4][4];
 	
 
-	public Line(String nameLine) {
+	public Line(String nameLine, Station source, Station destination) {
 		super();
 		this.nameLine = nameLine;
+		this.start = start ;
+		this.arrive=arrive;
 	} 
 	
 	
-	public void travelFromTo(Station source, Station dest ) {
-		
+	//dans la classe Citizen plutot 
+	public void travel(Station source, Station dest ) {
 		
 	}
 	

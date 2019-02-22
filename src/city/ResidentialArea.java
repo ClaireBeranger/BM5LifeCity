@@ -12,16 +12,21 @@ public class ResidentialArea implements Districts{
 	private String typeDistrict = "RESIDENTIAL";
 	private int numbResidentsCurrent=0;
 	private int numbResidentsMax=50;
-	private int dimX= 4, dimY= 4;
+	private int dimX= 5, dimY= 5;
 	private Case[][] map = new Case [dimX][dimY];
+	private int coordX, coordY;
+	private boolean station;
 	private int price = 500;
 	private int level = 1;
 	
 
 //Constructor of Class -----------------------------------------------------------------------
 	
-	public ResidentialArea(String nameDsitrict) {
+	public ResidentialArea(String nameDsitrict,int coordX, int coordY) {
 		this.nameDsitrict = nameDsitrict;
+		this.station=false ;
+		this.coordX = coordX ;
+		this.coordY = coordY ;
 		initDistrict();
 	}
 //Function of class ----------------------------------------------------------------------------

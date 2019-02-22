@@ -5,18 +5,20 @@ import javax.swing.JFrame;
 public class AreaJFrame extends javax.swing.JFrame {
 	
 
- /**
-	 * @author Amira
-	 */
+/**
+ * 
+ * @author Amira - Claire
+ * 
+ */
 	private static final long serialVersionUID = -6258284235223024914L;
 			/**
 		     * Creates new form AreaJFrame
 		     */
-		    public AreaJFrame() {
-		        initComponents();
+		    public AreaJFrame(String title) {
+		        initComponents(title);
 		    }
 
-		    private void initComponents() {
+		    private void initComponents(String title) {
 
 		        ControlMyCityjLabel = new javax.swing.JLabel();
 		        AreaDetailsjPanel = new javax.swing.JPanel();
@@ -53,13 +55,13 @@ public class AreaJFrame extends javax.swing.JFrame {
 		        ControlMyCityjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
 		        ControlMyCityjLabel.setForeground(new java.awt.Color(0, 102, 102));
 		        ControlMyCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-		        ControlMyCityjLabel.setText("Informations sur quatier Q1");
+		        ControlMyCityjLabel.setText("Informations sur quatier " + title);
 
 		        AreaDetailsjPanel.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102))));
 
 		        ControlMyCityjLabel1.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
 		        ControlMyCityjLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-		        ControlMyCityjLabel1.setText("DÃ©tails ");
+		        ControlMyCityjLabel1.setText("Détails ");
 
 		        NumberOfUnemployedjButton.setText("Nombre de chomeurs");
 
@@ -72,7 +74,7 @@ public class AreaJFrame extends javax.swing.JFrame {
 		            }
 		        });
 
-		        NumberOfLinejButton.setText("Nombre de lignes de mÃ©tro");
+		        NumberOfLinejButton.setText("Nombre de lignes de métro");
 
 		        NumberOfInhabitantsjButton1.setText("Nombre d'habitants");
 
@@ -512,7 +514,7 @@ public class AreaJFrame extends javax.swing.JFrame {
 		        
 		        java.awt.EventQueue.invokeLater(new Runnable() {
 		            public void run() {
-		                new AreaJFrame().setVisible(true);
+		                new AreaJFrame("title").setVisible(true);
 		            }
 		        });
 		    }

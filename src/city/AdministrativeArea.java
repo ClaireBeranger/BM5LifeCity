@@ -8,15 +8,20 @@ public class AdministrativeArea implements Districts{
 		private String typeDistrict = "ADMINISTRATIVE";
 		private int numbWorkers=0;
 		private int numbWorkersMax=5;
-		private int dimX= 4, dimY= 4;
+		private int dimX= 5, dimY= 5;
 		private Case[][] map = new Case [dimX][dimY];
+		private int coordX, coordY;
+		private boolean station;
 		private int price = 600;
 		private int level = 1;
 		
 //Constructor of Class -----------------------------------------------------------------------
 
-		public AdministrativeArea(String nameDsitrict) {
+		public AdministrativeArea(String nameDsitrict, int coordX, int coordY) {
 			this.nameDsitrict = nameDsitrict;
+			this.station = false;
+			this.coordX = coordX ;
+			this.coordY = coordY ;
 			initDistrict();
 			
 		}
@@ -38,6 +43,8 @@ public class AdministrativeArea implements Districts{
 				}	
 			}
 		}
+		
+		
 //Constructors of attributes -----------------------------------------------------------------
 	
 		public int getNumbWorkers() {

@@ -49,7 +49,7 @@ public class CityControlPanel extends javax.swing.JPanel {
 
         ControlMyCityjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         ControlMyCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ControlMyCityjLabel.setText("ContrÃ´ler ma ville");
+        ControlMyCityjLabel.setText("Contrôler ma ville");
 
         BuyAreajButton.setText("Acheter un  quartier");
         BuyAreajButton.addActionListener(new java.awt.event.ActionListener() {
@@ -65,14 +65,14 @@ public class CityControlPanel extends javax.swing.JPanel {
             }
         });
 
-        AddLineButton.setText("Ajouter une ligne de mÃ©tro");
+        AddLineButton.setText("Ajouter une ligne de métro");
         AddLineButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddLineButtonActionPerformed(evt);
             }
         });
 
-        DevelopmentjButton.setText("DÃ©velopper un quartier");
+        DevelopmentjButton.setText("Développer un quartier");
         DevelopmentjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DevelopmentjButtonActionPerformed(evt);
