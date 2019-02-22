@@ -14,7 +14,8 @@ public interface Districts {
 	
 	public void setTypeDistrict(String typeDistrict) ;
 	
-	public boolean AccesibleDistricts(String nameDsitrict);
+	public void setAccessibility(boolean accessibility);
+	
 	@Override
 	public String toString();
 }
