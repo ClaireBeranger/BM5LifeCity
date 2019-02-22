@@ -46,6 +46,16 @@ public class CityJFrame extends JFrame {
         CityInformationJPanel = new javax.swing.JPanel();
         CityInformationsjLabel = new javax.swing.JLabel();
         BudgetjButton = new javax.swing.JButton();
+        nbHabitant = new javax.swing.JLabel();
+        nbQuartier = new javax.swing.JLabel();
+        argentGain = new javax.swing.JLabel();
+        prosperite = new javax.swing.JLabel();
+        Budget = new javax.swing.JLabel();
+        typeQuartier = new javax.swing.JLabel();
+        argentPerdu = new javax.swing.JLabel();
+        nbStation = new javax.swing.JLabel();
+        nbLigne = new javax.swing.JLabel();
+
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -610,6 +620,15 @@ public class CityJFrame extends JFrame {
     private javax.swing.JButton AddStationjButton;
     private javax.swing.JLabel BM5LifeCityjLabel;
     private javax.swing.JButton BudgetjButton;
+    private javax.swing.JLabel nbHabitant;
+    private javax.swing.JLabel nbQuartier;
+    private javax.swing.JLabel argentGain;
+    private javax.swing.JLabel prosperite;
+    private javax.swing.JLabel Budget;
+    private javax.swing.JLabel typeQuartier;
+    private javax.swing.JLabel argentPerdu;
+    private javax.swing.JLabel nbStation;
+    private javax.swing.JLabel nbLigne;
     private javax.swing.JButton BuyAreajButton;
     private javax.swing.JPanel CityInformationJPanel;
     private javax.swing.JLabel CityInformationsjLabel;
