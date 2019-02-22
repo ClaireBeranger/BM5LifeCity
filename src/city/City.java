@@ -15,6 +15,7 @@ public class City {
 	private Clock clock;
 	private int nbMaxQuartier;
 	
+	
 //Constructor of Class -----------------------------------------------------------------------
 
 	public City(String name) {
