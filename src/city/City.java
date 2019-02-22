@@ -53,7 +53,33 @@ public class City {
 		
 	}
 	
-
+	//Verification de l'accessibilité d'un quartier
+	public boolean AccesibleDistricts(Districts d) {
+			d.setAccessibility(false);
+			
+			if ((map[this.coordX][this.coordY+1]).isStation())
+				d.setAccessibility(true);
+		
+			if (existStation(map[this.coordX][this.coordY+1]))
+				d.setAccessibility(true);
+			
+			if (existStation(map[this.coordX][this.coordY-1]))
+				d.setAccessibility(true);
+			
+			if (existStation(map[this.coordX+1][this.coordY]))
+				d.setAccessibility(true);
+			
+			if (existStation(map[this.coordX-1][this.coordY]))
+				d.setAccessibility(true);
+			
+			return accessibility;
+		}
+	
+	private boolean existStation(Case case1) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
 //Getters and setters of attributes -----------------------------------------------------------------
 
 	public String getName() {
