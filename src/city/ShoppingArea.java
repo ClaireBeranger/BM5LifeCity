@@ -52,16 +52,15 @@ public ShoppingArea(String nameDsitrict, int coordX, int coordY) {
 	public boolean AccesibleDistricts(String nameDsitrict) {
 			accessibility = false;
 		
-			if (existStation(map[this.Districts.x+1][this.Districts.y+1]))
+			//if (existStation(map[this.Districts.x+1][this.Districts.y+1]))
 				accessibility = true;
 			
-			if (existStation(map[this.Districts.x-1][this.Districts.y+1]))
+				Cit.map[2][2];
+			
+			//if (existStation(map[this.Districts.x][this.Districts.y+1]))
 				accessibility = true;
 			
-			if (existStation(map[this.Districts.x][this.Districts.y+1]))
-				accessibility = true;
-			
-			if (existStation(map[this.Districts.x][this.Districts.y-1]))
+		//	if (existStation(map[this.Districts.x][this.Districts.y-1]))
 				accessibility = true;
 			
 			return accessibility;
