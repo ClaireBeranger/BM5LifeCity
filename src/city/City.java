@@ -45,7 +45,7 @@ public class City {
 					this.map[i][j] = null;
 				} 					
 			}
-		}		
+		}		//wouhouu
 	}
 	
 	public void variationArgent(int x) {
