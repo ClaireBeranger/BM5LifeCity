@@ -17,4 +17,4 @@ public interface Districts {
 	public boolean AccesibleDistricts(String nameDsitrict);
 	@Override
 	public String toString();
-}
+}//
