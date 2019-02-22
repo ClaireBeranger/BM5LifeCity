@@ -56,27 +56,28 @@ public class City {
 	
 
 	//Verification de l'accessibilité d'un quartier
-/*	public boolean AccesibleDistricts(Districts d) {
+	public boolean AccesibleDistricts(Districts d) {
+		
 			d.setAccessibility(false);
 			
-			if ((map[this.coordX][this.coordY+1]).isStation())
+			if ((map[d.getCoordX()][d.getCoordY()]).isStation())
 				d.setAccessibility(true);
 		
-			if (existStation(map[this.coordX][this.coordY+1]))
+			if ((map[d.getCoordX()+1][d.getCoordY()]).isStation())
 				d.setAccessibility(true);
 			
-			if (existStation(map[this.coordX][this.coordY-1]))
+			if ((map[d.getCoordX()-1][d.getCoordY()]).isStation())
 				d.setAccessibility(true);
 			
-			if (existStation(map[this.coordX+1][this.coordY]))
+			if ((map[d.getCoordX()][d.getCoordY()+1]).isStation())
 				d.setAccessibility(true);
 			
-			if (existStation(map[this.coordX-1][this.coordY]))
+			if ((map[d.getCoordX()][d.getCoordY()-1]).isStation())
 				d.setAccessibility(true);
 			
-			return accessibility;
+			return d.isAccessibility();
 		}
-	*/
+	
 	private boolean existStation(Case case1) {
 		// TODO Auto-generated method stub
 		return false;
