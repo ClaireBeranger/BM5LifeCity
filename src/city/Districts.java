@@ -1,5 +1,5 @@
 package city;
-
+ 
 public interface Districts {
 
 	
@@ -13,7 +13,8 @@ public interface Districts {
 	public String getTypeDistrict() ;
 	
 	public void setTypeDistrict(String typeDistrict) ;
-
+	
+	public boolean AccesibleDistricts(String nameDsitrict);
 	@Override
 	public String toString();
 }
