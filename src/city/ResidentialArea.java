@@ -18,6 +18,7 @@ public class ResidentialArea implements Districts{
 	private boolean station;
 	private int price = 500;
 	private int level = 1;
+	private boolean accessibility;
 	
 
 //Constructor of Class -----------------------------------------------------------------------
@@ -97,6 +98,37 @@ public class ResidentialArea implements Districts{
 	}
 	public void setLevel(int level) {
 		this.level = level;
+	}
+	public int getCoordX() {
+		return coordX;
+	}
+
+	public void setCoordX(int coordX) {
+		this.coordX = coordX;
+	}
+
+	public int getCoordY() {
+		return coordY;
+	}
+
+	public void setCoordY(int coordY) {
+		this.coordY = coordY;
+	}
+
+	public boolean isStation() {
+		return station;
+	}
+
+	public void setStation(boolean station) {
+		this.station = station;
+	}
+
+	public boolean isAccessibility() {
+		return accessibility;
+	}
+
+	public void setAccessibility(boolean accessibility) {
+		this.accessibility = accessibility;
 	}
 	
 //---------------------------------------------------------------

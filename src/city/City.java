@@ -1,5 +1,7 @@
 package city;
 
+import java.util.ArrayList;
+
 import clock.Clock;
 
 public class City {
@@ -54,8 +56,55 @@ public class City {
 		
 	}
 	
-	
 
+	//Verification de l'accessibilité d'un quartier
+	
+	public boolean AccesibleDistricts(Districts d) {
+		try {
+			d.setAccessibility(false);
+			
+			if ((map[d.getCoordX()][d.getCoordY()]).isStation()) //Verification LOCAL
+				d.setAccessibility(true);
+		
+			if ((map[d.getCoordX()+1][d.getCoordY()]).isStation()) //Verification TOP
+				d.setAccessibility(true);
+			
+			if ((map[d.getCoordX()-1][d.getCoordY()]).isStation()) //Verifiation BOTTOM
+				d.setAccessibility(true);
+			
+			if ((map[d.getCoordX()][d.getCoordY()+1]).isStation()) //Verifiation RIGHT
+				d.setAccessibility(true);
+			
+			if ((map[d.getCoordX()][d.getCoordY()-1]).isStation()) //Verifiation LEFT 
+				d.setAccessibility(true);
+			
+			
+		}
+		catch(IndexOutOfBoundsException e) {
+		    System.err.println("IndexOutOfBoundsException: " + e.getMessage());
+
+		}
+		
+		return d.isAccessibility();
+		
+	}
+	private boolean travelCitizenToWork(ArrayList<Citizen> citizen) {
+		
+		for(Citizen c : citizen) {
+		
+			if(this.AccesibleDistricts(c.getWorkplace())) {
+				
+				c.TravelToWork();
+			//touche pas juste pull le moi et je continuerai inshaAllah. oumss.
+			}
+			else {
+				
+			}
+
+		}
+		return false;
+	}
+	
 //Getters and setters of attributes -----------------------------------------------------------------
 
 	public String getName() {

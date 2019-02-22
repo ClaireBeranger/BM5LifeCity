@@ -7,8 +7,8 @@ import java.util.ArrayList;
 public class Citizen {
 	//Attributes ---------------------------------------------------------------------------------
 	
-		private	Districts spot;
-		private Districts workplace;
+		private	Districts spot; //Home
+		private Districts workplace; //Work
 		
 	
 		
@@ -24,10 +24,14 @@ public class Citizen {
 		
 		public ArrayList<Station> TravelToWork () {
 			
+			
+			
 			ArrayList<Station> array = null;
 			
 			return array;
 		}
+		
+		
 		
 
 	//Constructors of attributes -----------------------------------------------------------------
