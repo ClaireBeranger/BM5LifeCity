@@ -24,7 +24,7 @@ public interface Districts {
 
 	public int getCoordX() ;
 	public void setCoordX(int coordX) ;
-//
+
 	public int getCoordY() ;
 
 	public void setCoordY(int coordY) ;
