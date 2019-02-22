@@ -5,7 +5,7 @@ public interface Districts {
 	
 	public void initDistrict() ;
 
-	
+	//districts
 	
 	public String getNameDsitrict();
 	public void setNameDsitrict(String nameDsitrict) ;
