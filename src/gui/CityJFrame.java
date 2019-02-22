@@ -440,6 +440,16 @@ public class CityJFrame extends JFrame {
         CityInformationsjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         CityInformationsjLabel.setText("Informations sur ma ville");
 
+        nbHabitant.setText("nombre Habitants :");
+        nbQuartier.setText("nombre de quartiers :");
+        argentGain.setText("argent gagné :");
+        prosperite.setText("Prosperite :");
+        Budget.setText("Budget :");
+        typeQuartier.setText("type de quartier :");
+        argentPerdu.setText("argent dépensé :");
+        nbStation.setText("nombre de stations :");
+        nbLigne.setText("nombre de lignes :");
+        
         BudgetjButton.setText("2000$");
         BudgetjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -457,6 +467,12 @@ public class CityJFrame extends JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(BudgetjButton)
                 .addGap(16, 16, 16))
+            .addGroup(CityInformationJPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(CityInformationsjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Budget)
+                    .addGap(30, 30, 30))
         );
         CityInformationJPanel1Layout.setVerticalGroup(
             CityInformationJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -466,6 +482,13 @@ public class CityJFrame extends JFrame {
                     .addComponent(CityInformationsjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BudgetjButton))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            
+            .addGroup(CityInformationJPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addGroup(CityInformationJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(CityInformationsjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Budget))
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
