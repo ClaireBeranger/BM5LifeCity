@@ -2,7 +2,8 @@
 package gui;
 
 /**
- * @author Amira
+ * 
+ * @author Amira - Claire
  *
  */
 import javax.swing.JFrame;
