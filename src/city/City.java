@@ -1,5 +1,7 @@
 package city;
 
+import java.util.ArrayList;
+
 import clock.Clock;
 
 public class City {
@@ -86,8 +88,20 @@ public class City {
 		return d.isAccessibility();
 		
 	}
-	private boolean existStation(Case case1) {
-		// TODO Auto-generated method stub
+	private boolean travelCitizenToWork(ArrayList<Citizen> citizen) {
+		
+		for(Citizen c : citizen) {
+		
+			if(this.AccesibleDistricts(c.getWorkplace())) {
+				
+				c.TravelToWork();
+			//touche pas juste pull le moi et je continuerai inshaAllah. oumss.
+			}
+			else {
+				
+			}
+
+		}
 		return false;
 	}
 	
