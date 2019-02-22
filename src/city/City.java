@@ -10,10 +10,11 @@ public class City {
 	private int money;
 	private int dimX=5;
 	private int dimY=10;
-	private Districts[][] map = new Districts[dimX][dimY];
+	public Districts[][] map = new Districts[dimX][dimY];
 	
 	private Clock clock;
 	private int nbMaxQuartier;
+	
 	
 //Constructor of Class -----------------------------------------------------------------------
 
@@ -53,8 +54,9 @@ public class City {
 		
 	}
 	
+
 	//Verification de l'accessibilité d'un quartier
-	public boolean AccesibleDistricts(Districts d) {
+/*	public boolean AccesibleDistricts(Districts d) {
 			d.setAccessibility(false);
 			
 			if ((map[this.coordX][this.coordY+1]).isStation())
@@ -74,7 +76,7 @@ public class City {
 			
 			return accessibility;
 		}
-	
+	*/
 	private boolean existStation(Case case1) {
 		// TODO Auto-generated method stub
 		return false;
