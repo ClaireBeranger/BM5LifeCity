@@ -56,28 +56,36 @@ public class City {
 	
 
 	//Verification de l'accessibilité d'un quartier
+	
 	public boolean AccesibleDistricts(Districts d) {
-		
+		try {
 			d.setAccessibility(false);
 			
-			if ((map[d.getCoordX()][d.getCoordY()]).isStation())
+			if ((map[d.getCoordX()][d.getCoordY()]).isStation()) //Verification LOCAL
 				d.setAccessibility(true);
 		
-			if ((map[d.getCoordX()+1][d.getCoordY()]).isStation())
+			if ((map[d.getCoordX()+1][d.getCoordY()]).isStation()) //Verification TOP
 				d.setAccessibility(true);
 			
-			if ((map[d.getCoordX()-1][d.getCoordY()]).isStation())
+			if ((map[d.getCoordX()-1][d.getCoordY()]).isStation()) //Verifiation BOTTOM
 				d.setAccessibility(true);
 			
-			if ((map[d.getCoordX()][d.getCoordY()+1]).isStation())
+			if ((map[d.getCoordX()][d.getCoordY()+1]).isStation()) //Verifiation RIGHT
 				d.setAccessibility(true);
 			
-			if ((map[d.getCoordX()][d.getCoordY()-1]).isStation())
+			if ((map[d.getCoordX()][d.getCoordY()-1]).isStation()) //Verifiation LEFT 
 				d.setAccessibility(true);
 			
-			return d.isAccessibility();
+			
 		}
-	
+		catch(IndexOutOfBoundsException e) {
+		    System.err.println("IndexOutOfBoundsException: " + e.getMessage());
+
+		}
+		
+		return d.isAccessibility();
+		
+	}
 	private boolean existStation(Case case1) {
 		// TODO Auto-generated method stub
 		return false;
