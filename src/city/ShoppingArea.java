@@ -17,8 +17,6 @@ public class ShoppingArea implements Districts {
 	private boolean station;
 	private int price = 40;
 	private int level = 1;
-	private boolean accessibility;
-	//
 	
 //Constructor of Class -----------------------------------------------------------------------
 	
@@ -48,24 +46,7 @@ public ShoppingArea(String nameDsitrict, int coordX, int coordY) {
 		}
 	}
 	
-	//Verification de l'accessibilité d'un quartier
-	public boolean AccesibleDistricts(String nameDsitrict) {
-			accessibility = false;
-		
-			if (existStation(map[this.Districts.x+1][this.Districts.y+1]))
-				accessibility = true;
-			
-			if (existStation(map[this.Districts.x-1][this.Districts.y+1]))
-				accessibility = true;
-			
-			if (existStation(map[this.Districts.x][this.Districts.y+1]))
-				accessibility = true;
-			
-			if (existStation(map[this.Districts.x][this.Districts.y-1]))
-				accessibility = true;
-			
-			return accessibility;
-		}
+
 //Constructors of attributes -----------------------------------------------------------------
 
 	public int getNumbTraders() {

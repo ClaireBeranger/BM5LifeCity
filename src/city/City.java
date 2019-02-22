@@ -10,10 +10,11 @@ public class City {
 	private int money;
 	private int dimX=5;
 	private int dimY=10;
-	private Districts[][] map = new Districts[dimX][dimY];
+	public Districts[][] map = new Districts[dimX][dimY];
 	
 	private Clock clock;
 	private int nbMaxQuartier;
+	
 	
 //Constructor of Class -----------------------------------------------------------------------
 
@@ -52,6 +53,7 @@ public class City {
 		this.money = this.money + x;
 		
 	}
+	
 	
 
 //Getters and setters of attributes -----------------------------------------------------------------
