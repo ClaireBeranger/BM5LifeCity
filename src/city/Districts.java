@@ -15,7 +15,7 @@ public interface Districts {
 
 	public Case[][] getMap() ;
 	public void setMap(Case[][] map) ;
-
+//
 	public int getPrice() ;
 	public void setPrice(int price) ;
 	
