@@ -18,6 +18,7 @@ public class ShoppingArea implements Districts {
 	private int price = 40;
 	private int level = 1;
 	private boolean accessibility;
+	//
 	
 //Constructor of Class -----------------------------------------------------------------------
 	
