@@ -8,7 +8,7 @@ public class City {
 	private String name;
 	private int prosperity;
 	private int money;
-	private int dimX=10;
+	private int dimX=5;
 	private int dimY=10;
 	private Districts[][] map = new Districts[dimX][dimY];
 	
