@@ -4,8 +4,7 @@ public interface Districts {
 
 	
 	public void initDistrict() ;
-
-	//districts
+	
 	
 	public String getNameDsitrict();
 	public void setNameDsitrict(String nameDsitrict) ;
@@ -15,7 +14,7 @@ public interface Districts {
 
 	public Case[][] getMap() ;
 	public void setMap(Case[][] map) ;
-//
+
 	public int getPrice() ;
 	public void setPrice(int price) ;
 	
@@ -37,4 +36,5 @@ public interface Districts {
 	
 	@Override
 	public String toString();
-}//
+	
+}

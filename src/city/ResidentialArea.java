@@ -7,7 +7,9 @@ import java.util.Arrays;
 import city.Case;
 
 public class ResidentialArea implements Districts{
+	
 //Attributes ---------------------------------------------------------------------------------
+	
 	private String nameDsitrict;
 	private String typeDistrict = "RESIDENTIAL";
 	private int numbResidentsCurrent=0;
@@ -30,10 +32,13 @@ public class ResidentialArea implements Districts{
 		this.coordY = coordY ;
 		initDistrict();
 	}
+	
 //Function of class ----------------------------------------------------------------------------
 	
 	
-	//on initialise un quartier residentiel avec 3 home et le reste vide.
+	/**
+	 *Initialize an administrative area with 3 homes.
+	 */
 	public void initDistrict() {
 		
 		for (int i=0; i<dimX;i++) {

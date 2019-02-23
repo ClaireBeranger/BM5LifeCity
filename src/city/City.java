@@ -1,8 +1,13 @@
 package city;
 
 import java.util.ArrayList;
-
+import city.Citizen.TimeWork;
 import clock.Clock;
+
+/**
+ * Class that manages the functioning of the city and its prosperity. 
+ * @author BM5 Corporation
+ */
 
 public class City {
 
@@ -13,6 +18,7 @@ public class City {
 	private int dimX=5;
 	private int dimY=10;
 	public Districts[][] map = new Districts[dimX][dimY];
+	public ArrayList<Citizen> citizens = new ArrayList<Citizen>();
 	
 	private Clock clock;
 	private int nbMaxQuartier;
@@ -20,6 +26,11 @@ public class City {
 	
 //Constructor of Class -----------------------------------------------------------------------
 
+	/**
+	 * Create a city with a name in parameter, and a prosperity of 50, a money of 1000$ in the beginning
+	 * and initialize the map of the city with 5x10 districts
+	 * @param name : the name of the city 
+	 */
 	public City(String name) {
 		super();
 		this.name = name;
@@ -31,34 +42,97 @@ public class City {
 	}
 //Functions of class--------------------------------------------------------------------------
 	
-	public void initMap() { //initialisation de la map en une matrice de 9 districts
+	/**
+	 * Initialization of the map of districts (10x10). 
+	 * Repartition and initialization of 9 districts in the 3x3 firsts cases of the city : 
+	 * 5 residential areas, 2 administrative area and 2 shopping areas.
+	 */
+	public void initMap() { 
 		
 		for (int i=0; i<dimX;i++) {
 			for(int j=0; j<dimY;j++) {
-				if(i==0 && j==0) {
+				
+				if((i==0 && j==0) || (i==1 && j==1) || (i==2 && j==2) || (i==0 && j==2) || (i==2 && j==0) ) {
 					this.map[i][j] = new ResidentialArea("res"+i+j, i,j); 
+					addCitizensInDistrict((ResidentialArea) this.map[i][j]);
 				}
-				else if(i==0 && j==1) {
+				else if( (i==1 && j==0) || (i==1 && j==2) ) {
 					this.map[i][j] = new ShoppingArea("shop"+i+j, i,j);
 				}
-				else if(i==0 && j==2) {
+				else if( (i==0 && j==1) || (i==2 && j==1) ) {
 					this.map[i][j] = new AdministrativeArea("admin"+i+j, i,j);
 				}
 				else {
 					this.map[i][j] = null;
 				} 					
 			}
-		}		//wouhouu
+		}		
 	}
 	
-	public void variationArgent(int x) {
+	/**
+	 * Add 10 citizens inside the residential district in parameter, 
+	 * and initialize the workPlace and the timeWork district of every citizen. 
+	 * 
+	 * @param district : residential districts 
+	 * 
+	 * @details 5 will work in PM and 5 will work in AM : 
+	 * 3 of the AM workers will work in the admin area and 2 in the shopping area, 
+	 * 3 of the PM workers will work in the shopping area and 2 in the admin area.  
+	 */
+	public void addCitizensInDistrict(ResidentialArea district) {
+		
+		citizens.add(new Citizen(district, closestAdminArea(district), TimeWork.AM));
+		citizens.add(new Citizen(district, closestAdminArea(district), TimeWork.AM));
+		citizens.add(new Citizen(district, closestAdminArea(district), TimeWork.AM));
+		//++
+		citizens.add(new Citizen(district, closestShopArea(district), TimeWork.AM));
+		citizens.add(new Citizen(district, closestShopArea(district), TimeWork.AM));
+		
+		
+		citizens.add(new Citizen(district, closestShopArea(district), TimeWork.PM));
+		citizens.add(new Citizen(district, closestShopArea(district), TimeWork.PM));
+		citizens.add(new Citizen(district, closestShopArea(district), TimeWork.PM));
+		//++
+		citizens.add(new Citizen(district, closestAdminArea(district), TimeWork.PM));
+		citizens.add(new Citizen(district, closestAdminArea(district), TimeWork.PM));
+	}
+	
+	/**
+	 * Search the closest administrative district from a current district
+	 * @param currentD : the current district 
+	 * @return the closest administrative district 
+	 */
+	public Districts closestAdminArea(Districts currentD) {
+		return null;
+		
+	}
+	
+	/**
+	 * Search the closest shopping district from a current district
+	 * @param currentD : the current district 
+	 * @return the closest shopping district 
+	 */
+	public Districts closestShopArea(Districts currentD) {
+		return null;
+		
+	}
+	
+	/**
+	 * Evaluate the variation of the money of the city
+	 * @param x : gain or loss of money
+	 */
+	public void variationMoney(int x) {
 		this.money = this.money + x;
 		
 	}
 	
-
-	//Verification de l'accessibilité d'un quartier
 	
+	/**
+	 * Evaluate the accessibility of a district. Check the neighbors districts 
+	 * and evaluate if the citizen of this district will can travel from or to this district.
+	 * @param d : district to be tested
+	 * @return TRUE if it's an accessible district, FALSE if not.
+	 */
 	public boolean AccesibleDistricts(Districts d) {
 		try {
 			d.setAccessibility(false);
@@ -88,21 +162,47 @@ public class City {
 		return d.isAccessibility();
 		
 	}
-	private boolean travelCitizenToWork(ArrayList<Citizen> citizen) {
+	
+	/**
+	 * Manage the travel of all the citizen of the city to their work.
+	 * Those who work in AM will travel at 8:00 in the clock and those who work in PM will travel at 12:00 in the clock
+	 * @param citizen : list of all the citizens of the city
+	 */
+	public void travelCitizenToWork( ArrayList<Citizen> citizen ) {
 		
 		for(Citizen c : citizen) {
 		
 			if(this.AccesibleDistricts(c.getWorkplace())) {
 				
 				c.TravelToWork();
-			//touche pas juste pull le moi et je continuerai inshaAllah. oumss.
+				//touche pas juste push le moi et je continuerai inshaAllah. oumss.
 			}
 			else {
 				
 			}
 
 		}
-		return false;
+	}
+	
+	/**
+	 * Manage the travel of all the citizen of the city to their home after work.
+	 * Those who work in AM will travel at 12:00 and those who work in PM will travel at 17:00
+	 * @param citizen : list of all the citizens of the city
+	 */
+	public void travelCitizenToHome( ArrayList<Citizen> citizen ) {
+		
+		for(Citizen c : citizen) {
+		
+			if(this.AccesibleDistricts(c.getWorkplace())) {
+				
+				c.TravelToWork();
+				//touche pas juste push le moi et je continuerai inshaAllah. oumss.
+			}
+			else {
+				
+			}
+
+		}
 	}
 	
 //Getters and setters of attributes -----------------------------------------------------------------
@@ -144,6 +244,8 @@ public class City {
 		this.nbMaxQuartier = nbMaxQuartier;
 	}
 
+	
+//---------------------------------------------------------------------
 	
 	public String toStringDistricts(Districts[][] map) {
 		String str= "";

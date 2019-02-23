@@ -5,36 +5,50 @@ import java.sql.Time;
 import java.util.ArrayList;
 
 public class Citizen {
-	//Attributes ---------------------------------------------------------------------------------
 	
-		private	Districts spot; //Home
-		private Districts workplace; //Work
+		/**
+		 * Type which define if a citizen work in the morning AM or in the afternoon PM.
+		 */
+		public enum TimeWork {AM , PM} ;
+
+//Attributes ---------------------------------------------------------------------------------
 		
+		/**Home district of the citizen **/
+		private	Districts spot; 
+		/**Working district of the citizen **/
+		private Districts workplace;
+		/**Time of working of the citizen {AM or PM} **/
+		private TimeWork workingTime ;
 	
 		
-	//Constructor of Class -----------------------------------------------------------------------
+//Constructor of Class -----------------------------------------------------------------------
 		
-		public Citizen(Districts spot,Districts workplace ) {
+		public Citizen(Districts spot,Districts workplace, TimeWork workingTime ) {
 			this.spot = spot;
 			this.workplace = workplace;
+			this.setWorkingTime(workingTime);
 			
 		
 		}
-	//Functions of class--------------------------------------------------------------------------
+		public Citizen(Districts spot ) {
+			this.spot = spot;
+
+		}
 		
-		public ArrayList<Station> TravelToWork () {
-			
-			
-			
+		
+//Functions of class--------------------------------------------------------------------------
+		
+		public ArrayList<Station> TravelToWork () {	
 			ArrayList<Station> array = null;
-			
 			return array;
+			
 		}
 		
 		
 		
 
-	//Constructors of attributes -----------------------------------------------------------------
+//Getters and Setters of attributes -----------------------------------------------------------------
+		
 		public Districts getSpot() {
 			return spot;
 		}
@@ -47,6 +61,12 @@ public class Citizen {
 		}
 		public void setWorkplace(Districts workplace) {
 			this.workplace = workplace;
+		}
+		public TimeWork getWorkingTime() {
+			return workingTime;
+		}
+		public void setWorkingTime(TimeWork workingTime) {
+			this.workingTime = workingTime;
 		}
 		
 }
