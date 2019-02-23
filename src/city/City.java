@@ -15,7 +15,7 @@ public class City {
 	private String name;
 	private int prosperity;
 	private int money;
-	private int dimX=5;
+	private int dimX=10;
 	private int dimY=10;
 	public Districts[][] map = new Districts[dimX][dimY];
 	public ArrayList<Citizen> citizens = new ArrayList<Citizen>();
