@@ -28,7 +28,7 @@ public class City {
 
 	/**
 	 * Create a city with a name in parameter, and a prosperity of 50, a money of 1000$ in the beginning
-	 * and initialize the map of the city with 5x10 districts
+	 * and initialize the map of the city with 10x10 districts
 	 * @param name : the name of the city 
 	 */
 	public City(String name) {
@@ -95,6 +95,7 @@ public class City {
 		//++
 		citizens.add(new Citizen(district, closestAdminArea(district), TimeWork.PM));
 		citizens.add(new Citizen(district, closestAdminArea(district), TimeWork.PM));
+		
 	}
 	
 	/**
