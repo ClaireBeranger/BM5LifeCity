@@ -18,14 +18,14 @@ public class CityFactory {
 
     }
 
-    public static City getRandomCity() {
-        City city = new City("");
+    public static City getRandomCity(String title) {
+        City city = new City(title);
 
         return city;
     }
 
-    public static City getCergy() {
-        City city = new City("Cergy");
+    public static City getCergy(String title) {
+        City city = new City(title);
 
         for (int i = 0; i < city.getDimX(); i++) {
             for (int j = 0; j < city.getDimY(); j++) {

@@ -112,13 +112,13 @@ public class CityNameJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void nametextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nametextFieldActionPerformed
-        nametextField.getText();
+    	nametextField.getText();
     }//GEN-LAST:event_nametextFieldActionPerformed
 
     private void validateNameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_validateNameButtonActionPerformed
         //BuyAreaPanel buyArea = new BuyAreaPanel();
         
-        CityMainFrame cityFrame = new CityMainFrame();
+        CityMainFrame cityFrame = new CityMainFrame(nametextField.getText());
         cityFrame.setVisible(true);
         cityFrame.setLocationRelativeTo(null);
         cityFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

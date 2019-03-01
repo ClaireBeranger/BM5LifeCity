@@ -30,10 +30,10 @@ public class CityMainFrame extends javax.swing.JFrame {
         public void onAddLine(int departureX, int departureY, int arrivalX, int arrivalY);
     }
 
-    public CityMainFrame() {
-        initComponents();
+    public CityMainFrame(String title) {
+        initComponents(title);
 
-        city = CityFactory.getCergy();
+        city = CityFactory.getCergy(title);
 
         cityController = new CityController(city);
 
@@ -50,7 +50,7 @@ public class CityMainFrame extends javax.swing.JFrame {
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents(String title) {
 
         ControlCityjPanel = new javax.swing.JPanel();
         ControlMyCityjLabel = new javax.swing.JLabel();
@@ -90,7 +90,7 @@ public class CityMainFrame extends javax.swing.JFrame {
 
         ControlMyCityjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         ControlMyCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ControlMyCityjLabel.setText("ContrÃ´ler ma ville");
+        ControlMyCityjLabel.setText("Contrôler ma ville");
 
         BuyAreajButton.setText("Acheter un  quartier");
         BuyAreajButton.addActionListener(new java.awt.event.ActionListener() {
@@ -107,14 +107,14 @@ public class CityMainFrame extends javax.swing.JFrame {
             }
         });
 
-        AddLineButton.setText("Ajouter une ligne de mÃ©tro");
+        AddLineButton.setText("Ajouter une ligne de métro");
         AddLineButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddLineButtonActionPerformed(evt);
             }
         });
 
-        DevelopmentjButton.setText("DÃ©velopper un quartier");
+        DevelopmentjButton.setText("Développer un quartier");
         DevelopmentjButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         DevelopmentjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,7 +199,7 @@ public class CityMainFrame extends javax.swing.JFrame {
         BM5LifeCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BM5LifeCityjLabel.setText("BM5lifeCity");
 
-        LogOutjButton.setText("DÃ©connexion");
+        LogOutjButton.setText("Déconnexion");
         LogOutjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogOutjButtonActionPerformed(evt);
@@ -287,7 +287,7 @@ public class CityMainFrame extends javax.swing.JFrame {
 
         prosperitejTextField.setForeground(new java.awt.Color(0, 102, 51));
         prosperitejTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        prosperitejTextField.setText("ProsperitÃ©");
+        prosperitejTextField.setText("Prosperité");
         prosperitejTextField.setMaximumSize(new java.awt.Dimension(80, 16));
         prosperitejTextField.setMinimumSize(new java.awt.Dimension(80, 16));
         prosperitejTextField.setPreferredSize(new java.awt.Dimension(80, 16));
@@ -627,7 +627,7 @@ public class CityMainFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new CityMainFrame().setVisible(true);
+                new CityMainFrame("mon titre").setVisible(true);
             }
         });
     }
