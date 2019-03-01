@@ -105,8 +105,27 @@ public class City {
 	 * @return the closest administrative district 
 	 */
 	public Districts closestAdminArea(Districts currentD) {
-		return null;
+		if (currentD.getTypeDistrict() == "ADMINISTRATIVE") 
+			
+			return map[currentD.getCoordX()][currentD.getCoordY()];	
+			//-----	Right
+		else if (map[currentD.getCoordX()+1][currentD.getCoordY()].getTypeDistrict() == "ADMINISTRATIVE") 
 		
+			return map[currentD.getCoordX()+1][currentD.getCoordY()];	
+			//-----Left
+		else if (map[currentD.getCoordX()-1][currentD.getCoordY()].getTypeDistrict() == "ADMINISTRATIVE") 
+			
+			return map[currentD.getCoordX()-1][currentD.getCoordY()];
+			//-----Bottom
+		else if (map[currentD.getCoordX()][currentD.getCoordY()+1].getTypeDistrict() == "ADMINISTRATIVE") 
+			
+			return map[currentD.getCoordX()][currentD.getCoordY()+1];	
+			//-----Top
+		else if (map[currentD.getCoordX()][currentD.getCoordY()-1].getTypeDistrict() == "ADMINISTRATIVE") 
+			
+			return map[currentD.getCoordX()][currentD.getCoordY()-1];	
+			//-----
+		return null;
 	}
 	
 	/**
