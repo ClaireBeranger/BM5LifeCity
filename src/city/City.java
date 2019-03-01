@@ -15,13 +15,14 @@ public class City {
 	private String name;
 	private int prosperity;
 	private int money;
-	private int dimX=10;
-	private int dimY=10;
+	private int dimX=12;
+	private int dimY=12;
 	public Districts[][] map = new Districts[dimX][dimY];
 	public ArrayList<Citizen> citizens = new ArrayList<Citizen>();
 	
 	private Clock clock;
-	private int nbMaxQuartier;
+	private int nbMaxDistricts;
+	private int nbDistrictsBought;
 	
 	
 //Constructor of Class -----------------------------------------------------------------------
@@ -38,7 +39,7 @@ public class City {
 		this.money = 10000;
 		initMap();
 		this.clock = new Clock();
-		this.nbMaxQuartier = dimX*dimY;
+		this.nbMaxDistricts = dimX*dimY;
 	}
 //Functions of class--------------------------------------------------------------------------
 	
@@ -239,13 +240,19 @@ public class City {
 		this.clock = clock;
 	}
 	public int getNbMaxQuartier() {
-		return nbMaxQuartier;
+		return nbMaxDistricts;
 	}
 	public void setNbMaxQuartier(int nbMaxQuartier) {
-		this.nbMaxQuartier = nbMaxQuartier;
+		this.nbMaxDistricts = nbMaxQuartier;
 	}
 
-	
+	public int getNbDistrictsBought() {
+		return nbDistrictsBought;
+	}
+	public void setNbDistrictsBought(int nbDistrictsBought) {
+		this.nbDistrictsBought = nbDistrictsBought;
+	}
+
 //---------------------------------------------------------------------
 	
 	public String toStringDistricts(Districts[][] map) {
@@ -262,7 +269,7 @@ public class City {
 	@Override
 	public String toString() {
 		return "BEGIN City [\n City_name = " + name + ",\n City_prosperity=" + prosperity + ", City_money=" + money +", dimX=" + dimX + ", dimY=" + dimY 
-				+ ",\n nbMaxQuartier=" + nbMaxQuartier + ", clock=" + clock +
+				+ ",\n nbMaxQuartier=" + nbMaxDistricts + ", clock=" + clock +
 				",\n CityDistricts=\n \t" + toStringDistricts(getMap()) +"\nEND City]";
 	}
 

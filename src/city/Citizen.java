@@ -23,16 +23,24 @@ public class Citizen {
 		
 //Constructor of Class -----------------------------------------------------------------------
 		
+		/**
+		 * Constructor of a Citizen
+		 * @param spot district of living of the citizen
+		 * @param workplace district of work of the citizen
+		 * @param workingTime time of work of the citizen AM or PM 
+		 */
 		public Citizen(Districts spot,Districts workplace, TimeWork workingTime ) {
 			this.spot = spot;
 			this.workplace = workplace;
 			this.setWorkingTime(workingTime);
-			
-		
 		}
+		
+		/**
+		 * Constructor of a Citizen
+		 * @param spot district of living of the citizen
+		 */
 		public Citizen(Districts spot ) {
 			this.spot = spot;
-
 		}
 		
 		

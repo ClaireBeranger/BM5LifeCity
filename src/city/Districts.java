@@ -25,7 +25,6 @@ public interface Districts {
 	public void setCoordX(int coordX) ;
 
 	public int getCoordY() ;
-
 	public void setCoordY(int coordY) ;
 
 	public boolean isStation() ;
