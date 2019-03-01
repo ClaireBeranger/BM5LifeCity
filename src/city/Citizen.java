@@ -13,14 +13,10 @@ import java.util.ArrayList;
 public class Citizen {
 
 		/**
-
 		 * Type which define if a citizen work in the morning AM or in the afternoon PM.
-
 		 */
 
 		public enum TimeWork {AM , PM} ;
-
-
 
 //Attributes ---------------------------------------------------------------------------------
 
@@ -51,20 +47,14 @@ public class Citizen {
 			this.spot = spot;
 
 			this.workplace = workplace;
-
-			this.setWorkingTime(workingTime);
-
 			
-
-		
+			this.setWorkingTime(workingTime);
 
 		}
 
 		public Citizen(Districts spot ) {
 
 			this.spot = spot;
-
-
 
 		}
 
@@ -74,25 +64,18 @@ public class Citizen {
 
 //Functions of class--------------------------------------------------------------------------
 
-		
-
 		public ArrayList<Station> TravelToWork () {	
 
 			ArrayList<Station> array = null;
-
 			return array;
 
-			
-
 		}
-
 
 //Getters and Setters of attributes -----------------------------------------------------------------
 
 		
 
 		public Districts getSpot() {
-
 			return spot;
 
 		}
