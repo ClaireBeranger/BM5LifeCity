@@ -132,7 +132,28 @@ public class City {
 	 * @return the closest shopping district 
 	 */
 	public Districts closestShopArea(Districts currentD) {
-		return null;
+	
+			if (currentD.getTypeDistrict() == "SHOPPING") 
+				
+				return map[currentD.getCoordX()][currentD.getCoordY()];	
+				//-----	Right
+			else if (map[currentD.getCoordX()+1][currentD.getCoordY()].getTypeDistrict() == "SHOPPING") 
+			
+				return map[currentD.getCoordX()+1][currentD.getCoordY()];	
+				//-----Left
+			else if (map[currentD.getCoordX()-1][currentD.getCoordY()].getTypeDistrict() == "SHOPPING") 
+				
+				return map[currentD.getCoordX()-1][currentD.getCoordY()];
+				//-----Bottom
+			else if (map[currentD.getCoordX()][currentD.getCoordY()+1].getTypeDistrict() == "SHOPPING") 
+				
+				return map[currentD.getCoordX()][currentD.getCoordY()+1];	
+				//-----Top
+			else if (map[currentD.getCoordX()][currentD.getCoordY()-1].getTypeDistrict() == "SHOPPING") 
+				
+				return map[currentD.getCoordX()][currentD.getCoordY()-1];	
+				//-----
+			return null;
 		
 	}
 	
