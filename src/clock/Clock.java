@@ -129,11 +129,13 @@ public class Clock {	//creation of the clock
 		}
 	}
 
-	public String toString() {
-		return "HOUR : " + getHour() + ":" + getMinute() + " ; DATE : " + getDay() + "/" + getMonth() + "/" + getYear();
+	public String toStringHour() {
+		return getHour() + ":" + getMinute() ;
 	}
 	
-
+	public String toStringDate() {
+		return  getDay() + "/" + getMonth() + "/" + getYear() ;
+	}
 	
 	
 }
