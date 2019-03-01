@@ -41,7 +41,7 @@ public class CityMainFrame extends javax.swing.JFrame {
         
         cityNameLabel.setText(city.getName());
         
-        datejLabel.setText(city.getClock().toString());
+        datejLabel.setText(city.getClock().toStringHour());
     }
 
     /* public setVisible(boolean visible) {
@@ -357,7 +357,7 @@ public class CityMainFrame extends javax.swing.JFrame {
 
         dateTextField.setForeground(new java.awt.Color(0, 102, 51));
         dateTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        dateTextField.setText("Date");
+        dateTextField.setText("Heure");
         dateTextField.setMaximumSize(new java.awt.Dimension(40, 16));
         dateTextField.setMinimumSize(new java.awt.Dimension(40, 16));
         dateTextField.setPreferredSize(new java.awt.Dimension(40, 16));
