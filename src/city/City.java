@@ -172,16 +172,12 @@ public class City {
 			
 			if ((map[d.getCoordX()][d.getCoordY()-1]).isStation()) //Verifiation LEFT 
 				d.setAccessibility(true);
-			
-			
 		}
 		catch(IndexOutOfBoundsException e) {
 		    System.err.println("IndexOutOfBoundsException: " + e.getMessage());
-
 		}
 		
 		return d.isAccessibility();
-		
 	}
 	
 	/**
