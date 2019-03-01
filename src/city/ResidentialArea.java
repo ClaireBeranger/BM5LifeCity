@@ -16,8 +16,7 @@ public class ResidentialArea implements Districts {
     private boolean accessibility;
 
 //Constructor of Class -----------------------------------------------------------------------
-<<<<<<< HEAD
-	
+    
 	public ResidentialArea(String nameDsitrict,int coordX, int coordY) {
 		this.nameDsitrict = nameDsitrict;
 		this.station=false ;
@@ -27,15 +26,7 @@ public class ResidentialArea implements Districts {
 
 	}
 	
-=======
-    public ResidentialArea(String nameDsitrict, int coordX, int coordY) {
-        this.nameDsitrict = nameDsitrict;
-        this.station = false;
-        this.coordX = coordX;
-        this.coordY = coordY;
-        initDistrict();
-    }
->>>>>>> branch 'master' of https://github.com/ClaireBeranger/BM5LifeCity
+
 //Function of class ----------------------------------------------------------------------------
 
     //on initialise un quartier residentiel avec 3 home et le reste vide.
