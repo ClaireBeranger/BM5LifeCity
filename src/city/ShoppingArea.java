@@ -6,9 +6,7 @@ import city.Case;
 
 
 public class ShoppingArea implements Districts {
-	
 //Attributes ---------------------------------------------------------------------------------
-	
 	private String nameDsitrict;
 	private String typeDistrict = "SHOPPING";
 	private int numbTraders=0;
@@ -23,31 +21,25 @@ public class ShoppingArea implements Districts {
 	
 //Constructor of Class -----------------------------------------------------------------------
 	
-	public ShoppingArea(String nameDsitrict, int coordX, int coordY) {
-			this.nameDsitrict = nameDsitrict;
-			this.station = false;
-			this.coordX = coordX ;
-			this.coordY = coordY ;
-			initDistrict();
-		}
-	
-//Function of class----------------------------------------------------------------------------
+public ShoppingArea(String nameDsitrict, int coordX, int coordY) {
+		this.nameDsitrict = nameDsitrict;
+		this.station = false;
+		this.coordX = coordX ;
+		this.coordY = coordY ;
+		initDistrict();
+	}
+//Function of class
 
-
-
-	/**
-	 *Initialize a shopping area with 3 stores.
-	 */
+	//on initialise un quartier shop avec 3 store et le reste vide.
 	public void initDistrict() {
 		
 		for (int i=0; i<dimX;i++) {
 			for(int j=0; j<dimY;j++) {
-				
-				if(i==0 && j<3) { 
+				if(i==0 && j<3) { //Trois premières cases avec un magasin
 					Case c = new Case(Case.Type.STORE,i,j) ;
 					map[i][j]=c;
 				}
-				else { 
+				else { //Les autres cases avec null
 					Case c = new Case(Case.Type.NOTHING,i,j) ;
 					map[i][j]=c; 	//-----
 				}
@@ -55,7 +47,7 @@ public class ShoppingArea implements Districts {
 		}
 	}
 
-//Getters and setters of attributes -----------------------------------------------------------------
+//Constructors of attributes -----------------------------------------------------------------
 
 	public int getNumbTraders() {
 		return numbTraders;
