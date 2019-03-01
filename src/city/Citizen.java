@@ -12,6 +12,8 @@ import java.util.ArrayList;
 
 public class Citizen {
 
+	
+
 		/**
 		 * Type which define if a citizen work in the morning AM or in the afternoon PM.
 		 */

@@ -16,17 +16,13 @@ public class ResidentialArea implements Districts {
     private boolean accessibility;
 
 //Constructor of Class -----------------------------------------------------------------------
-    
-	public ResidentialArea(String nameDsitrict,int coordX, int coordY) {
-		this.nameDsitrict = nameDsitrict;
-		this.station=false ;
-		this.coordX = coordX ;
-		this.coordY = coordY ;
-		initDistrict();
-
-	}
-	
-
+    public ResidentialArea(String nameDsitrict, int coordX, int coordY) {
+        this.nameDsitrict = nameDsitrict;
+        this.station = false;
+        this.coordX = coordX;
+        this.coordY = coordY;
+        initDistrict();
+    }
 //Function of class ----------------------------------------------------------------------------
 
     //on initialise un quartier residentiel avec 3 home et le reste vide.
