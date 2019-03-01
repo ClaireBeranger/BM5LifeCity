@@ -1,17 +1,12 @@
 package city;
 
 import java.util.ArrayList;
-import city.Citizen.TimeWork;
-import clock.Clock;
 
-/**
- * Class that manages the functioning of the city and its prosperity. 
- * @author BM5 Corporation
- */
+import clock.Clock;
+import java.util.List;
 
 public class City {
-
-
+	
 	private String name;
 	private int prosperity;
 	private int money;
@@ -23,9 +18,10 @@ public class City {
 	private Clock clock;
 	private int nbMaxDistricts;
 	private int nbDistrictsBought;
-	
-	
-//Constructor of Class -----------------------------------------------------------------------
+    
+    private List<Line> lines;
+
+
 
 	/**
 	 * Create a city with a name in parameter, and a prosperity of 50, a money of 1000$ in the beginning
@@ -42,7 +38,9 @@ public class City {
 		this.nbMaxDistricts = dimX*dimY;
 		this.nbDistrictsBought = 5;
 	}
+
 //Functions of class--------------------------------------------------------------------------
+
 	
 	/**
 	 * Initialization of the map of districts (10x10). 
@@ -256,9 +254,6 @@ public class City {
 				
 			}
 
-		}
-	}
-	
 	/**
 	 * Manage the travel of all the citizen of the city to their home after work.
 	 * Those who work in AM will travel at 12:00 and those who work in PM will travel at 17:00
@@ -280,8 +275,56 @@ public class City {
 			
 		}
 	}
-	
+
+    public void variationArgent(int x) {
+        this.money = this.money + x;
+
+    }
+
+
+    public void addDistrict(Districts district) {
+        int i = district.getCoordX();
+        int j = district.getCoordY();
+        if (i < 0 || i > dimX || j < 0 || j > dimY) {
+            return;
+        }
+
+        map[i][j] = district;
+    }
+
+    public Districts getDistrict(int i, int j) {
+        if (i < 0 || i > dimX || j < 0 || j > dimY) {
+            return null;
+        }
+        
+        return map[i][j];
+    }
+    
+    public void addLine(int startX, int startY, int endX, int endY) {
+        if (startX < 0 || startX > dimX || startY < 0 || startY > dimY) {
+            return;
+        }
+        
+        if (endX < 0 || endX > dimX || endY < 0 || endY > dimY) {
+            return ;
+        }
+        
+        Districts departureDistrict = map[startX][startY];
+        Districts arrivalDistrict = map[endX][endY];
+        
+        if (departureDistrict instanceof EmptyArea || arrivalDistrict instanceof EmptyArea) {
+            return;
+        }
+        
+        lines.add(new Line(departureDistrict, arrivalDistrict));
+    }
+    
+    public List<Line> getLines() {
+        return lines;
+    }
+
 //Getters and setters of attributes -----------------------------------------------------------------
+
 
 	public String getName() {
 		return name;
@@ -348,5 +391,7 @@ public class City {
 				+citizens.toString()
 				+"\nEND City]";
 	}
+
+
 
 }

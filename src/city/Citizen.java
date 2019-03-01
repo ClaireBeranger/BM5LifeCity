@@ -5,24 +5,18 @@ import java.sql.Time;
 import java.util.ArrayList;
 
 public class Citizen {
+	//Attributes ---------------------------------------------------------------------------------
+		TypeWork enum 
 	
-		/**
-		 * Type which define if a citizen work in the morning AM or in the afternoon PM.
-		 */
-		public enum TimeWork {AM , PM} ;
-
-//Attributes ---------------------------------------------------------------------------------
+		private TimeWork timeWork;
+		private	Districts spot; //Home
+		private Districts workplace; //Work
 		
-		/**Home district of the citizen **/
-		private	Districts spot; 
-		/**Working district of the citizen **/
-		private Districts workplace;
-		/**Time of working of the citizen {AM or PM} **/
-		private TimeWork workingTime ;
 	
 		
-//Constructor of Class -----------------------------------------------------------------------
+	//Constructor of Class -----------------------------------------------------------------------
 		
+<<<<<<< HEAD
 		/**
 		 * Constructor of a Citizen
 		 * @param spot district of living of the citizen
@@ -30,10 +24,19 @@ public class Citizen {
 		 * @param workingTime time of work of the citizen AM or PM 
 		 */
 		public Citizen(Districts spot,Districts workplace, TimeWork workingTime ) {
+=======
+		public Citizen(Districts spot,Districts workplace ) {
+>>>>>>> branch 'master' of https://github.com/ClaireBeranger/BM5LifeCity
 			this.spot = spot;
 			this.workplace = workplace;
+<<<<<<< HEAD
 			this.setWorkingTime(workingTime);
+=======
+			
+		
+>>>>>>> branch 'master' of https://github.com/ClaireBeranger/BM5LifeCity
 		}
+<<<<<<< HEAD
 		
 		/**
 		 * Constructor of a Citizen
@@ -42,21 +45,23 @@ public class Citizen {
 		public Citizen(Districts spot ) {
 			this.spot = spot;
 		}
+=======
+	//Functions of class--------------------------------------------------------------------------
+>>>>>>> branch 'master' of https://github.com/ClaireBeranger/BM5LifeCity
 		
-		
-//Functions of class--------------------------------------------------------------------------
-		
-		public ArrayList<Station> TravelToWork () {	
-			ArrayList<Station> array = null;
-			return array;
+		public ArrayList<Station> TravelToWork () {
 			
+			
+			
+			ArrayList<Station> array = null;
+			
+			return array;
 		}
 		
 		
 		
 
-//Getters and Setters of attributes -----------------------------------------------------------------
-		
+	//Constructors of attributes -----------------------------------------------------------------
 		public Districts getSpot() {
 			return spot;
 		}
@@ -69,12 +74,6 @@ public class Citizen {
 		}
 		public void setWorkplace(Districts workplace) {
 			this.workplace = workplace;
-		}
-		public TimeWork getWorkingTime() {
-			return workingTime;
-		}
-		public void setWorkingTime(TimeWork workingTime) {
-			this.workingTime = workingTime;
 		}
 		
 }
