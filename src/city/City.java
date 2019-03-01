@@ -38,7 +38,7 @@ public class City {
 				System.out.println(e.getMessage());
 			}
 			clock.increment();
-			//System.out.println(clock.toStringHour());
+			System.out.println(clock.toStringHour());
 		}
 	
     }
