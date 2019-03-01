@@ -11,8 +11,8 @@ public static void main(String[] args) {
 		City myCity = new City("BM5 City Life !");
 		System.out.println(myCity);
 		
-		/*	
-		Clock clock = new Clock();
+		
+		/*Clock clock = new Clock();
 		boolean bool = true;
 		while (bool!=false){
 			try {
@@ -21,9 +21,9 @@ public static void main(String[] args) {
 				System.out.println(e.getMessage());
 			}
 			clock.increment();
-			System.out.println(clock.toString());
-		}
-		*/	
+			System.out.println(clock.toStringHour());
+		}*/
+		
 		
 	}
 	

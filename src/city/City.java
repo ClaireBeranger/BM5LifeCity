@@ -26,9 +26,21 @@ public class City {
         this.prosperity = 50;
         this.money = 10000;
         initMap();
-        this.clock = new Clock();
         this.nbMaxQuartier = dimX * dimY;
         lines = new ArrayList<Line>();
+        
+        this.clock = new Clock();
+		boolean bool = true;
+		while (bool!=false){
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				System.out.println(e.getMessage());
+			}
+			clock.increment();
+			//System.out.println(clock.toStringHour());
+		}
+	
     }
 //Functions of class--------------------------------------------------------------------------
 
