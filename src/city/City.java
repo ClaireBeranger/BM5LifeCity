@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import clock.Clock;
 import java.util.List;
 
+import city.Citizen.TimeWork;
+
 public class City {
 	
 	private String name;
@@ -250,10 +252,10 @@ public class City {
 				c.TravelToWork();
 				//touche pas juste push le moi et je continuerai inshaAllah. oumss.
 			}
-			else {
-				
-			}
-
+			
+		}
+	}
+	
 	/**
 	 * Manage the travel of all the citizen of the city to their home after work.
 	 * Those who work in AM will travel at 12:00 and those who work in PM will travel at 17:00
