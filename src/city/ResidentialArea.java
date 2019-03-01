@@ -31,6 +31,7 @@ public class ResidentialArea implements Districts{
 		this.coordX = coordX ;
 		this.coordY = coordY ;
 		initDistrict();
+
 	}
 	
 //Function of class ----------------------------------------------------------------------------

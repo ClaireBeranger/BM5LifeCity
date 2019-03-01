@@ -40,6 +40,7 @@ public class City {
 		initMap();
 		this.clock = new Clock();
 		this.nbMaxDistricts = dimX*dimY;
+		this.nbDistrictsBought = 5;
 	}
 //Functions of class--------------------------------------------------------------------------
 	
@@ -104,26 +105,34 @@ public class City {
 	 * @param currentD : the current district 
 	 * @return the closest administrative district 
 	 */
-	public Districts closestAdminArea(Districts currentD) {
-		if (currentD.getTypeDistrict() == "ADMINISTRATIVE") 
-			
-			return map[currentD.getCoordX()][currentD.getCoordY()];	
-			//-----	Right
-		else if (map[currentD.getCoordX()+1][currentD.getCoordY()].getTypeDistrict() == "ADMINISTRATIVE") 
+	public AdministrativeArea closestAdminArea(Districts currentD) {
 		
-			return map[currentD.getCoordX()+1][currentD.getCoordY()];	
-			//-----Left
-		else if (map[currentD.getCoordX()-1][currentD.getCoordY()].getTypeDistrict() == "ADMINISTRATIVE") 
-			
-			return map[currentD.getCoordX()-1][currentD.getCoordY()];
-			//-----Bottom
-		else if (map[currentD.getCoordX()][currentD.getCoordY()+1].getTypeDistrict() == "ADMINISTRATIVE") 
-			
-			return map[currentD.getCoordX()][currentD.getCoordY()+1];	
-			//-----Top
-		else if (map[currentD.getCoordX()][currentD.getCoordY()-1].getTypeDistrict() == "ADMINISTRATIVE") 
-			
-			return map[currentD.getCoordX()][currentD.getCoordY()-1];	
+		int x = currentD.getCoordX();
+		int y = currentD.getCoordY();
+		
+		try {
+				if (currentD.getTypeDistrict().equals("ADMINISTRATIVE")) 
+					
+					return (AdministrativeArea) map[x][y];	
+					//-----	Right
+				else if (map[x+1][y].getTypeDistrict().equals("ADMINISTRATIVE")) 
+				
+					return (AdministrativeArea) map[x+1][y];	
+					//-----Left
+				else if (map[x-1][y].getTypeDistrict().equals("ADMINISTRATIVE")) 
+					
+					return (AdministrativeArea) map[x-1][y];
+					//-----Bottom
+				else if (map[x][y+1].getTypeDistrict().equals("ADMINISTRATIVE")) 
+					
+					return (AdministrativeArea) map[x][y+1];	
+					//-----Top
+				else if (map[x][y-1].getTypeDistrict().equals("ADMINISTRATIVE")) 
+					
+					return (AdministrativeArea) map[x][y-1];
+		}catch (Exception e) {
+			e.getMessage();
+		}
 			//-----
 		return null;
 	}
@@ -135,25 +144,33 @@ public class City {
 	 */
 	public Districts closestShopArea(Districts currentD) {
 	
-			if (currentD.getTypeDistrict() == "SHOPPING") 
+		int x = currentD.getCoordX();
+		int y = currentD.getCoordY();
+		
+		try {
+			if (currentD.getTypeDistrict().equals("SHOPPING")) 
 				
-				return map[currentD.getCoordX()][currentD.getCoordY()];	
+				return (AdministrativeArea) map[x][y];	
 				//-----	Right
-			else if (map[currentD.getCoordX()+1][currentD.getCoordY()].getTypeDistrict() == "SHOPPING") 
+			else if (map[x+1][y].getTypeDistrict().equals("SHOPPING")) 
 			
-				return map[currentD.getCoordX()+1][currentD.getCoordY()];	
+				return (AdministrativeArea) map[x+1][y];	
 				//-----Left
-			else if (map[currentD.getCoordX()-1][currentD.getCoordY()].getTypeDistrict() == "SHOPPING") 
+			else if (map[x-1][y].getTypeDistrict().equals("SHOPPING")) 
 				
-				return map[currentD.getCoordX()-1][currentD.getCoordY()];
+				return (AdministrativeArea) map[x-1][y];
 				//-----Bottom
-			else if (map[currentD.getCoordX()][currentD.getCoordY()+1].getTypeDistrict() == "SHOPPING") 
+			else if (map[x][y+1].getTypeDistrict().equals("SHOPPING")) 
 				
-				return map[currentD.getCoordX()][currentD.getCoordY()+1];	
+				return (AdministrativeArea) map[x][y+1];	
 				//-----Top
-			else if (map[currentD.getCoordX()][currentD.getCoordY()-1].getTypeDistrict() == "SHOPPING") 
+			else if (map[x][y-1].getTypeDistrict().equals("ADMINISTRATIVE")) 
 				
-				return map[currentD.getCoordX()][currentD.getCoordY()-1];	
+				return (AdministrativeArea) map[x][y-1];
+			
+		}catch (Exception e) {
+			e.getMessage();
+		}
 				//-----
 			return null;
 		
@@ -166,6 +183,26 @@ public class City {
 	public void variationMoney(int x) {
 		this.money = this.money + x;
 		
+	}
+	
+	/**
+	 * Add a district in the City with the (x,y) in parameter
+	 * @param x : X of the district
+	 * @param y : Y of the district
+	 */
+	public void addDistrict(int x,int y,String typeDistrict) {
+		
+		if( this.map[x][y] == null) {
+		
+			if(typeDistrict.equals("ADMINISTRATIVE") )
+				this.map[x][y] = new AdministrativeArea("res"+x+y, x,y);
+			
+			if(typeDistrict.equals("RESIDENTIAL") )
+				this.map[x][y] = new ResidentialArea("res"+x+y, x,y);
+			
+			if(typeDistrict.equals("SHOPPING") )
+				this.map[x][y] = new ShoppingArea("res"+x+y, x,y);
+		}
 	}
 	
 	
@@ -225,6 +262,7 @@ public class City {
 	/**
 	 * Manage the travel of all the citizen of the city to their home after work.
 	 * Those who work in AM will travel at 12:00 and those who work in PM will travel at 17:00
+	 * 
 	 * @param citizen : list of all the citizens of the city
 	 */
 	public void travelCitizenToHome( ArrayList<Citizen> citizen ) {
@@ -239,7 +277,7 @@ public class City {
 			else {
 				
 			}
-
+			
 		}
 	}
 	
@@ -306,7 +344,9 @@ public class City {
 	public String toString() {
 		return "BEGIN City [\n City_name = " + name + ",\n City_prosperity=" + prosperity + ", City_money=" + money +", dimX=" + dimX + ", dimY=" + dimY 
 				+ ",\n nbMaxQuartier=" + nbMaxDistricts + ", clock=" + clock +
-				",\n CityDistricts=\n \t" + toStringDistricts(getMap()) +"\nEND City]";
+				",\n CityDistricts=\n \t" + toStringDistricts(getMap())+ ",\n"
+				+citizens.toString()
+				+"\nEND City]";
 	}
 
 }
