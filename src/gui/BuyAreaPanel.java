@@ -50,7 +50,7 @@ public class BuyAreaPanel extends JPanel {
         AreaTypejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         AreaTypejLabel.setText("Nom du quartier");
 
-        AreajComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quartier Commercial", "Quartier RÃ©sidentiel", "Quartier Public" }));
+        AreajComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quartier Commercial", "Quartier Résidentiel", "Quartier Public" }));
         AreajComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AreajComboBox1ActionPerformed(evt);

@@ -19,7 +19,7 @@ public class AddDistrictPanel extends javax.swing.JPanel {
     public AddDistrictPanel(OnCityControlActionListener pListener) {
         admArea = new AdministrativeArea("administratif", 0, 0);
         comArea = new ShoppingArea("commercial", 0, 0);
-        resArea = new ResidentialArea("rÃ©sidentiel", 0, 0);
+        resArea = new ResidentialArea("résidentiel", 0, 0);
         listener = pListener;
         initComponents();
     }
@@ -54,7 +54,7 @@ public class AddDistrictPanel extends javax.swing.JPanel {
         XpositionjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         XpositionjLabel.setText("Choisir X");
 
-        AreaTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quartier Commercial", "Quartier RÃ©sidentiel", "Quartier Administratif" }));
+        AreaTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quartier Commercial", "Quartier Résidentiel", "Quartier Administratif" }));
         AreaTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AreaTypejComboBoxActionPerformed(evt);
@@ -163,7 +163,7 @@ public class AddDistrictPanel extends javax.swing.JPanel {
             PricejLabel.setText(String.valueOf(admArea.getPrice()));
         } else if (AreaTypejComboBox.getSelectedItem().equals("Quartier Commercial")) {
             PricejLabel.setText(String.valueOf(comArea.getPrice()));
-        } else if (AreaTypejComboBox.getSelectedItem().equals("Quartier RÃ©sidentiel")) {
+        } else if (AreaTypejComboBox.getSelectedItem().equals("Quartier Résidentiel")) {
             PricejLabel.setText(String.valueOf(resArea.getPrice()));
         }
     }//GEN-LAST:event_AreaTypejComboBoxActionPerformed

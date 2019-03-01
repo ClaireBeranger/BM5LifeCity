@@ -9,7 +9,7 @@ import utils.DialogUtils;
 
 /**
  *
- * @author Amira
+ * @author Amira - Claire
  */
 public class CityMainFrame extends javax.swing.JFrame {
 
@@ -362,7 +362,7 @@ public class CityMainFrame extends javax.swing.JFrame {
         dateTextField.setMinimumSize(new java.awt.Dimension(40, 16));
         dateTextField.setPreferredSize(new java.awt.Dimension(40, 16));
 
-        ShowLineButton.setText("Afficher une ligne de mÃ©tro");
+        ShowLineButton.setText("Afficher une ligne de métro");
         ShowLineButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ShowLineButtonActionPerformed(evt);

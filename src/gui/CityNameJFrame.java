@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Amira
+ * @author Amira - Claire
  */
 public class CityNameJFrame extends javax.swing.JFrame {
 

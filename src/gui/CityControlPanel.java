@@ -31,13 +31,13 @@ public class CityControlPanel extends javax.swing.JPanel {
 
         BuyAreajButton.setText("Acheter un  quartier");
 
-        AddLineButton.setText("Ajouter une ligne de mÃ©tro");
+        AddLineButton.setText("Ajouter une ligne de métro");
 
-        DevelopmentjButton.setText("DÃ©velopper un quartier");
+        DevelopmentjButton.setText("Développer un quartier");
 
         ControlMyCityjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         ControlMyCityjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ControlMyCityjLabel.setText("ContrÃ´ler ma ville");
+        ControlMyCityjLabel.setText("Contrôler ma ville");
 
         EvolutionjLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         EvolutionjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

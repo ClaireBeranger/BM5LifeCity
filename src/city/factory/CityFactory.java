@@ -10,7 +10,7 @@ import city.ShoppingArea;
 
 /**
  *
- * @author amira
+ * @author amira - Claire
  */
 public class CityFactory {
 

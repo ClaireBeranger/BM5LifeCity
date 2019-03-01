@@ -56,7 +56,7 @@ public class AreaJFrame extends javax.swing.JFrame {
 
         ControlMyCityjLabel1.setFont(new java.awt.Font("Silom", 1, 18));
         ControlMyCityjLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ControlMyCityjLabel1.setText("DÃ©tails ");
+        ControlMyCityjLabel1.setText("Détails ");
 
         NumberOfUnemployedjButton.setText("Nombre de chomeurs");
 
@@ -69,7 +69,7 @@ public class AreaJFrame extends javax.swing.JFrame {
             }
         });
 
-        NumberOfLinejButton.setText("Nombre de lignes de mÃ©tro");
+        NumberOfLinejButton.setText("Nombre de lignes de métro");
 
         NumberOfInhabitantsjButton1.setText("Nombre d'habitants");
 

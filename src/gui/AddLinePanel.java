@@ -41,16 +41,16 @@ public class AddLinePanel extends javax.swing.JPanel {
 
         AddLinejLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         AddLinejLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AddLinejLabel.setText("Ajouter une ligne de mÃ©tro");
+        AddLinejLabel.setText("Ajouter une ligne de métro");
 
         XpositionjLabel1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        XpositionjLabel1.setText("Veuillez choisir les coordonnÃ©es des quartiers");
+        XpositionjLabel1.setText("Veuillez choisir les coordonnées des quartiers");
 
         DistrictArricejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        DistrictArricejLabel.setText("Quartier du dÃ©part");
+        DistrictArricejLabel.setText("Quartier du départ");
 
         DistrictDepartjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        DistrictDepartjLabel.setText("Quartier d'arrivÃ©e");
+        DistrictDepartjLabel.setText("Quartier d'arrivée");
 
         StationPricejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         StationPricejLabel.setText("Prix");

@@ -31,7 +31,7 @@ public class ShowLinePanel extends javax.swing.JPanel {
 
         ShowLinejLabel.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         ShowLinejLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ShowLinejLabel.setText("Afficher les lignes de mÃ©tro");
+        ShowLinejLabel.setText("Afficher les lignes de métro");
 
         AreaShowLinejComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "tous les quartiers", "du quartier Q1", "du quartier Q2", "du quartier Q3", "du quartier Q4", "du quartier Q5", "du quartier Q6", "du quartier Q7", "du quartier Q8", "du quartier Q9", "du quartier Q10", "du quartier Q11", "du quartier Q13", "du quartier Q14", "du quartier Q15", "du quartier Q16", "du quartier Q17", "du quartier Q18", "du quartier Q19", "du quartier Q20", "du quartier Q21", "du quartier Q22" }));
         AreaShowLinejComboBox.setMaximumSize(new java.awt.Dimension(170, 30));

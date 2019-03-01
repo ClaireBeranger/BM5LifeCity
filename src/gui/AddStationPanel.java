@@ -62,7 +62,7 @@ public class AddStationPanel extends javax.swing.JPanel {
         });
 
         XpositionjLabel1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        XpositionjLabel1.setText("Veuillez choisir les coordonnÃ©es du quartier");
+        XpositionjLabel1.setText("Veuillez choisir les coordonnées du quartier");
 
         districtXPosComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
         districtXPosComboBox.addActionListener(new java.awt.event.ActionListener() {

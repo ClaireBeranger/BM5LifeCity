@@ -38,7 +38,7 @@ public class DevelopmentControlPanel extends JPanel {
 
         jLabel2.setFont(new java.awt.Font("Silom", 1, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Dï¿½veloppement d'un quartier");
+        jLabel2.setText("Développement d'un quartier");
 
         ValidatejButton1.setText("Valider");
 
