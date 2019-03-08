@@ -4,6 +4,8 @@ package gui;
 import city.City;
 import city.controller.CityController;
 import city.factory.CityFactory;
+import clock.Clock;
+
 import javax.swing.JDialog;
 import utils.DialogUtils;
 
@@ -31,18 +33,34 @@ public class CityMainFrame extends javax.swing.JFrame {
     }
 
     public CityMainFrame(String title) {
-        initComponents(title);
-
-        city = CityFactory.getCergy(title);
-
-        cityController = new CityController(city);
-
-        cityView.setCity(city);
+    	boolean bool  = true;
+    	
+	        initComponents(title);
+	
+	        city = CityFactory.getCergy(title);
+	
+	        cityController = new CityController(city);
+	       
+	        cityView.setCity(city);
+	        
+	        cityNameLabel.setText(city.getName());
+	        
+	       // while(bool!=false) {
+	        	
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					datejLabel.setText(e.getMessage());
+				}
+				city.getClock().increment();
+				//System.out.println(clock.toStringHour());
+				datejLabel.setText(city.getClock().toStringHour());
+	    	//}		
+		}
         
-        cityNameLabel.setText(city.getName());
-        
-        datejLabel.setText(city.getClock().toStringHour());
-    }
+
+
+  
 
     /* public setVisible(boolean visible) {
         Q11Panel.setVisible(visible);
@@ -555,7 +573,6 @@ public class CityMainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_nbreHabitantjLabelPropertyChange
 
     private void datejLabelPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_datejLabelPropertyChange
-        //datejLabel.setText(String.valueOf(city.setClock("clock clock")));
     }//GEN-LAST:event_datejLabelPropertyChange
 
     private void ShowLineButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowLineButtonActionPerformed

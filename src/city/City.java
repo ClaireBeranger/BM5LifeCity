@@ -30,7 +30,7 @@ public class City {
         lines = new ArrayList<Line>();
         
         this.clock = new Clock();
-		boolean bool = true;
+		/*boolean bool = true;
 		while (bool!=false){
 			try {
 				Thread.sleep(1000);
@@ -38,8 +38,8 @@ public class City {
 				System.out.println(e.getMessage());
 			}
 			clock.increment();
-			System.out.println(clock.toStringHour());
-		}
+			//System.out.println(clock.toStringHour());
+		}*/
 	
     }
 //Functions of class--------------------------------------------------------------------------
