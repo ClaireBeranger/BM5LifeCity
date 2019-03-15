@@ -1,8 +1,5 @@
 package city;
 
-import java.util.Arrays;
-
-import city.Case;
 
 
 public class ShoppingArea implements Districts {

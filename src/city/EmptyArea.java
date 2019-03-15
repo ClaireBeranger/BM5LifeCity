@@ -18,7 +18,7 @@ public class EmptyArea implements Districts {
     }
     
      public EmptyArea(String nameDistrict, int coordX, int coordY) {
-        this.nameDsitrict = nameDsitrict;
+        this.nameDsitrict = nameDistrict;
         this.coordX = coordX;
         this.coordY = coordY;
     }

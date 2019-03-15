@@ -105,7 +105,7 @@ public class City {
 
     }
 
-    private boolean travelCitizenToWork(ArrayList<Citizen> citizen) {
+  /*  private boolean travelCitizenToWork(ArrayList<Citizen> citizen) {
 
         for (Citizen c : citizen) {
 
@@ -119,7 +119,7 @@ public class City {
 
         }
         return false;
-    }
+    }*/
 
 //Getters and setters of attributes -----------------------------------------------------------------
     public String getName() {

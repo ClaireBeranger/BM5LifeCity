@@ -1,6 +1,6 @@
 package city;
 
-import java.util.Arrays;
+
 
 public class AdministrativeArea implements Districts{
 //Attributes ---------------------------------------------------------------------------------
